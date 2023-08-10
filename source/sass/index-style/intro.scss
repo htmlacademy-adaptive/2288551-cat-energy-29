@@ -1,0 +1,38 @@
+@import"../common/fonts.scss";
+
+// text style start
+
+.intro {
+  margin: 0;
+  &__title {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__slogan,
+  &__link {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+// text style end
+
+.intro {
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 0 50%, transparent 50% 100%);
+  
+  &__link {
+    background-color: #68b738;
+    padding: 8px 44px;
+  }
+}
