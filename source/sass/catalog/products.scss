@@ -1,0 +1,74 @@
+@import"../common/fonts.scss";
+
+// text style start
+
+.products__title {
+  color: #000000;
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.products-list__cards {
+  list-style: none;
+}
+
+.catalog-card {
+  &__title {
+    color: #222222;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__order {
+    color: #ffffff;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.product-info,
+.show-more__description {
+  color: #444444;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.show-more {
+  &__title {
+    color: #111111;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__button-text {
+    color: #444444;
+    font-family: "Oswald-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+// text style end
+
+.catalog-card__order {
+  background-color: #68b738;
+  border:#68b738;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.show-more__button-text {
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

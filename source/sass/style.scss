@@ -1,7 +1,22 @@
 // Начните писать стили здесь
+
+// common styles
 @import"common/header.scss";
+@import"common/main-footer.scss";
+
+// index.html
 @import"index-style/intro.scss";
 @import"index-style/tariff.scss";
+@import"index-style/advantages.scss";
+@import"index-style/example.scss";
+@import"index-style/contact.scss";
+
+// catalog.html
+@import"catalog/products.scss";
+@import"catalog/addition-products.scss";
+
+//form.html
+@import"form/form-container.scss";
 
 .page {
   background-color: #ffffff;

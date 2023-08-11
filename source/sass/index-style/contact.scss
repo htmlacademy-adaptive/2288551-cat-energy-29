@@ -1,0 +1,22 @@
+@import"../common/fonts.scss";
+
+// text style start
+.contact {
+  &__title {
+    color: #111111;
+font-family: "Oswald-Regular", sans-serif;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+  }
+
+  &__address {
+    color: #444444;
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
+
+// text style end
