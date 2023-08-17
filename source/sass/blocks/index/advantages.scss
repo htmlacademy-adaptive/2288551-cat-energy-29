@@ -1,17 +1,15 @@
-@import"../common/fonts.scss";
-
 // text style start
 .advantages {
   &__title {
-    color: #000000;
-    font-family: "Oswald-Regular", sans-serif;
+    color: $title-color;
+    font-family: $oswald;
     font-size: 36px;
     line-height: 40px;
   }
 
   &__description {
-    color: #444444;
-    font-family: "Lato-Regular", sans-serif;
+    color: $text-color;
+    font-family: $lato;
     font-size: 14px;
     line-height: 18px;
   }
@@ -28,7 +26,13 @@
     height: 60px;
   }
 
+  &__item--icon_leaf {
+    background-image: url("../../img/icons/leaf.svg");
+    background-repeat: no-repeat;
+  }
+
   &__list {
     list-style-position: inside;
   }
 }
+

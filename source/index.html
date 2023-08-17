@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,11 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-container">
   <header class="main-header">
-    <a class="main-header__logo-image" href="#">
+    <a class="main-header__logo" href="#">
       <img src="img/icons/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
-      <span class="visually-hidden">главная страница</span>
-    </a>
-    <a class="main-header__logo-text" href="#">
-      <img src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -34,14 +31,15 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-index-container">
     <section class="intro">
       <div class="intro__wrapper">
         <h1 class="intro__title">Функциональное
           питание для котов</h1>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        <img src="img/images/index-can.png" width="280" height="270" alt="Кэт энерджи курица">
+        <img src="img/desktop-img/index-can.png" width="280" height="270" alt="Кэт энерджи курица">
         <a class="intro__link" href="#">подобрать программу</a>
+        <!-- не class="order-button" -->
       </div>
     </section>
     <section class="tariff">
@@ -72,22 +70,22 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ol class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon_leaf">
             <p class="advantages__description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon_powder">
             <p class="advantages__description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon_cutlery">
             <p class="advantages__description">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--icon_clock">
             <p class="advantages__description">Уже через месяц наслаждайтесь
               изменениями к лучшему
               вашего питомца!</p>

@@ -1,17 +1,16 @@
-@import"../common/fonts.scss";
 
 // text style start
 .form-container {
   &__title {
     color: #000000;
-    font-family: "Oswald-Regular", sans-serif;
+    font-family: $oswald;
     font-size: 36px;
     line-height: 36px;
   }
 
   &__guide {
     color: #000000;
-    font-family: "Oswald-Regular", sans-serif;
+    font-family: $oswald;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;

@@ -1,0 +1,15 @@
+.main-header {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: baseline;
+}
+.main-header__logo_text {
+  transform: translateX(50%);
+}

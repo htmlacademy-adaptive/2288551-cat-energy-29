@@ -1,0 +1,38 @@
+// text style start
+.intro__title {
+  color: $light-page-color;
+  text-align: center;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro__slogan,
+.intro__link {
+  color: $light-page-color;
+  text-align: center;
+  font-family: $oswald;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.intro__link {
+  text-decoration: none;
+}
+
+
+// text style end
+
+.intro {
+  display: block;
+  margin: 0;
+  background: url("../../../img/desktop-img/index-background-desktop.png") no-repeat,
+    linear-gradient(rgba(104, 183, 56, 0.85) 0 50%, transparent 50% 100%);
+  background-size: 100%;
+  background-position: center;
+}
+
+.intro__link {
+  background-color: #68b738;
+  padding: 8px 44px;
+}

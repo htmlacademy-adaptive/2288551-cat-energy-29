@@ -1,35 +1,49 @@
 // Начните писать стили здесь
 
-// common styles
-@import"common/header.scss";
-@import"common/main-footer.scss";
+// global styles
+@import"common/variables.scss";
+@import"common/contact.scss";
+@import"common/fonts.scss";
+@import"common/order-button.scss";
+@import"common/global.scss";
+@import"common/visually-hidden.scss";
+
+
+// header
+@import"blocks/header/main-header.scss";
+@import"blocks/header/main-nav.scss";
+@import"blocks/header/site-list.scss";
+
+// footer
+@import"blocks/footer/main-footer.scss";
+@import"blocks/footer/social-link.scss";
+@import"blocks/footer/social-list.scss";
 
 // index.html
-@import"index-style/intro.scss";
-@import"index-style/tariff.scss";
-@import"index-style/advantages.scss";
-@import"index-style/example.scss";
-@import"index-style/contact.scss";
+@import"blocks/index/advantages.scss";
+@import"blocks/index/catalog-link.scss";
+@import"blocks/index/data.scss";
+@import"blocks/index/example.scss";
+@import"blocks/index/intro.scss";
+@import"blocks/index/main-index-container.scss";
+@import"blocks/index/tariff-card.scss";
+@import"blocks/index/tariff.scss";
 
 // catalog.html
-@import"catalog/products.scss";
-@import"catalog/addition-products.scss";
+@import"blocks/catalog/addition-option.scss";
+@import"blocks/catalog/addition-products.scss";
+@import"blocks/catalog/catalog-card.scss";
+@import"blocks/catalog/main-catalog-container.scss";
+@import"blocks/catalog/product-info.scss";
+@import"blocks/catalog/products-list.scss";
+@import"blocks/catalog/products.scss";
+@import"blocks/catalog/promo.scss";
+@import"blocks/catalog/show-more.scss";
 
 //form.html
-@import"form/form-container.scss";
-
-.page {
-  background-color: #ffffff;
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import"blocks/form/addition.scss";
+@import"blocks/form/cat-data.scss";
+@import"blocks/form/form.scss";
+@import"blocks/form/main-form-container.scss";
+@import"blocks/form/owner-data.scss";
+@import"blocks/form/weight-goal.scss";
