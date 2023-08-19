@@ -1,0 +1,9 @@
+
+.tariff-list {
+  @include reset-list;
+  @media(min-width:$width-desktop) {
+    display: flex;
+    gap: 80px;
+  }
+}
+

@@ -1,0 +1,8 @@
+.owner-data__title {
+  @include form-title;
+}
+
+.email-owner__caption,
+.telephone__caption {
+  @include form-main-text;
+}

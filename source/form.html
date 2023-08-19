@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="32x32" href="favicon.ico">
   <link href="css/style.css" rel="stylesheet">
   <title>Кэт энерджи: подбор программы</title>
 </head>
@@ -41,31 +42,31 @@
       <form class="form-set" action="https://echo.htmlacademy.ru/" method="post">
         <!-- class="form-set" может не нужен  -->
         <fieldset class="form-set__about-cat cat-data">
-          <label class="cat-data__one form-field-one">
-            <span class="form-field-one__caption">ИМЯ:<sup>*</sup></span>
-            <input class="form-field-one__field" type="text" name="cat-name" placeholder="Барсик" required>
+          <label class="cat-data__one form-field">
+            <span class="form-field__caption">ИМЯ:<sup>*</sup></span>
+            <input class="form-field__field" type="text" name="cat-name" placeholder="Барсик" required>
           </label>
-          <label class="cat-data__two form-field-two">
-            <span class="form-field-two__caption">Вес (кг):<sup>*</sup></span>
-            <input class="form-field-two__field" type="number" name="cat-weight" placeholder="7" required>
+          <label class="cat-data__two form-field">
+            <span class="form-field__caption">Вес (кг):<sup>*</sup></span>
+            <input class="form-field__field" type="number" name="cat-weight" placeholder="7" required>
           </label>
-          <label class="cat-data__three form-field-three">
-            <span class="form-field-three__caption">Возраст (лет):</span>
-            <input class="form-field-three__field" type="number" name="cat-age" placeholder="7">
+          <label class="cat-data__three form-field">
+            <span class="form-field__caption">Возраст (лет):</span>
+            <input class="form-field__field" type="number" name="cat-age" placeholder="7">
           </label>
         </fieldset>
         <fieldset class="form-set__cat-weight weight-goal">
           <div class="weight-goal__one">
             <input type="radio" name="cat-goal" id="weight-loss" value="weight-loss" checked>
-            <label for="weight-loss">похудение</label>
+            <label class="weight-goal__title" for="weight-loss">похудение</label>
           </div>
           <div class="weight-goal__two">
             <input type="radio" name="cat-goal" id="weight-gain" value="weight-gain">
-            <label for="weight-gain">Набор массы</label>
+            <label class="weight-goal__title" for="weight-gain">Набор массы</label>
           </div>
           <div class="weight-goal__three">
             <input type="radio" name="cat-goal" id="weight-none" value="ask-advice">
-            <label for="weight-none">Не знаю (Нужен ваш совет)</label>
+            <label class="weight-goal__title" for="weight-none">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
         <fieldset class="form-set__about-owner owner-data">

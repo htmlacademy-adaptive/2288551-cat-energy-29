@@ -1,42 +1,52 @@
-// text style start
 .example {
-  &__title {
-    color: #000000;
-    font-family: "Oswald-Regular", sans-serif;
-    font-size: 36px;
-    line-height: 40px;
-  }
+  position: relative;
+}
 
-  &__description {
-    color: #444444;
-    font-family: "Lato-Regular", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+.example::before {
+  content: "";
+  position: absolute;
+  background-color: #eaeaea;
+  min-width: 100%;
+  padding: 20px;
+  height: 659px;
+  left: 0;
+  z-index: -6;
+  @media (min-width:$width-tablet) {
+    height: 462px;
+  }
+  @media (min-width:$width-desktop) {
+
   }
 }
 
-.data {
-  &__value {
-    color: #000;
-    font-family: "Oswald-Regular", sans-serif;
+.example__title {
+    @include index-second-title;
+    padding-top: 25px;
+    bottom: 0;
+  }
+
+  .example__description {
+    @include index-main-text;
+  }
+
+.data__value {
+    color: $title-color;
+    font-family: $secondary-font;
     font-size: 24px;
     line-height: 24px;
   }
 
-  &__info {
-    color: #444444;
-    font-family: "Lato-Regular", sans-serif;
+  .data__info {
+    color: $text-color;
+    font-family: $main-font;
     font-size: 12px;
     line-height: 12px;
   }
-}
 
 .price {
-  color: #000000;
-  font-family: "Oswald-Regular", sans-serif;
+  color: $title-color;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-
-// text style end

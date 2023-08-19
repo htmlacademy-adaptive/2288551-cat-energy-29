@@ -1,38 +1,51 @@
 // text style start
-.advantages {
-  &__title {
-    color: $title-color;
-    font-family: $oswald;
-    font-size: 36px;
-    line-height: 40px;
-  }
+.advantages__title {
+  @include index-second-title;
+  margin-bottom: 42px;
 
-  &__description {
-    color: $text-color;
-    font-family: $lato;
-    font-size: 14px;
-    line-height: 18px;
+  @media (min-width: $width-tablet) {
+    margin-bottom: 32px;
   }
+}
+
+.advantages__description {
+  @include index-main-text;
 }
 
 // text style end
 
-.advantages {
-  &__item::before {
-    content: "";
-    display: block;
-    background-color: #68b738;
-    width: 60px;
-    height: 60px;
-  }
+.advantages__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 
-  &__item--icon_leaf {
-    background-image: url("../../img/icons/leaf.svg");
-    background-repeat: no-repeat;
-  }
-
-  &__list {
-    list-style-position: inside;
+  @media(min-width:$width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 152px 37px;
   }
 }
 
+.advantages__item {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  min-height: 60px;
+
+  @media(min-width:$width-tablet) {
+    flex-wrap: wrap;
+    width: 247px;
+    min-height: 280px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $main-page-color;
+    min-width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+}

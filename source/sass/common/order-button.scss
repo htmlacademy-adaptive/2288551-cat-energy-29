@@ -1,11 +1,11 @@
 
 .order-button {
-  background-color: #68b738;
-  border: #68b738;
+  background-color: $main-page-color;
+  border:  $main-page-color;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #ffffff;
-  font-family: "Oswald-Regular", sans-serif;
+  color: $light-page-color;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

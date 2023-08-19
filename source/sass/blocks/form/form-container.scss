@@ -1,0 +1,29 @@
+.main-form-container {
+  padding: 0 20px;
+  @media (min-width:$width-tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width:$width-desktop) {
+    padding: 0 110px;
+  }
+}
+
+.form-container__title {
+  @include first-title;
+  margin-bottom: 37px;
+  @media (min-width:$width-tablet) {
+    margin-bottom: 54px;
+  }
+}
+
+.form-container__guide {
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+  @media (min-width:$width-tablet) {
+    margin-bottom: 66px;
+  }
+}

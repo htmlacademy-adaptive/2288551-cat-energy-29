@@ -1,38 +1,89 @@
 // text style start
 .intro__title {
-  color: $light-page-color;
-  text-align: center;
-  font-family: $oswald;
-  font-size: 36px;
-  line-height: 36px;
+  @include first-title;
+  padding: 27px 35px 25px;
+  @media (min-width:$width-tablet) {
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
 }
 
 .intro__slogan,
 .intro__link {
+  margin: 0;
   color: $light-page-color;
   text-align: center;
-  font-family: $oswald;
+  font-family: $secondary-font;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.intro__link {
-  text-decoration: none;
+.intro__slogan {
+  padding-bottom: 30px;
+  @media (min-width:$width-tablet) {
+    color: $title-color;
+    text-align: left;
+    padding-bottom: 50px;
+  }
 }
 
-
+.intro__wrapper {
+  text-align: center;
+  width: 470px;
+  @media (min-width:$width-tablet) {
+    text-align: left;
+  }
+}
 // text style end
 
 .intro {
-  display: block;
   margin: 0;
-  background: url("../../../img/desktop-img/index-background-desktop.png") no-repeat,
-    linear-gradient(rgba(104, 183, 56, 0.85) 0 50%, transparent 50% 100%);
-  background-size: 100%;
-  background-position: center;
+  position: relative;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, transparent 302px 100%),
+  url("../../../img/mobile-img/index-intro-background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  @media (min-width:$width-tablet) {
+    background-image: none;
+  }
+  @media (min-width:$width-desktop) {
+    &::before {
+    content: url("../../../img/desktop-img/index-background-desktop.png");
+    position: absolute;
+    top: -60px;
+    width:720px;
+    height: 694px;
+    right: -110px;
+    z-index: -6;
+    }
+    &::after {
+      content:"";
+      position: absolute;
+      background-color: rgba(104, 183, 56, 0.85);
+      width:720px;
+      height: 694px;
+      right: -110px;
+      top: -60px;
+      z-index: -5;
+    }
+  }
+}
+
+.intro__img {
+  display: block;
+  margin: 0 auto;
 }
 
 .intro__link {
-  background-color: #68b738;
+  display: block;
+  margin: 3px auto 20px;
+  @media (min-width:$width-tablet) {
+    position: absolute;
+    top: 45%;
+  }
+}
+
+.intro__link-text{
+  background-color: $main-page-color;
   padding: 8px 44px;
 }
