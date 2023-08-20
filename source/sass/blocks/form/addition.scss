@@ -1,0 +1,8 @@
+.addition__title {
+  @include form-title;
+}
+
+.addition__item {
+  @include form-main-text;
+  color: $title-color;
+}

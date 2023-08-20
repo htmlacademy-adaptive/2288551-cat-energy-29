@@ -1,4 +1,13 @@
-// text style start
+.intro {
+  padding: 0 20px;
+  @media (min-width:$width-tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width:$width-desktop) {
+    padding: 0 110px;
+  }
+}
+
 .intro__title {
   @include first-title;
   padding: 27px 35px 25px;
@@ -29,12 +38,10 @@
 
 .intro__wrapper {
   text-align: center;
-  width: 470px;
   @media (min-width:$width-tablet) {
     text-align: left;
   }
 }
-// text style end
 
 .intro {
   margin: 0;

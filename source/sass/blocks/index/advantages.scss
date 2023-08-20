@@ -1,4 +1,13 @@
-// text style start
+.advantages {
+  padding: 0 20px;
+  @media (min-width:$width-tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width:$width-desktop) {
+    padding: 0 110px;
+  }
+}
+
 .advantages__title {
   @include index-second-title;
   margin-bottom: 42px;
@@ -11,8 +20,6 @@
 .advantages__description {
   @include index-main-text;
 }
-
-// text style end
 
 .advantages__list {
   @include reset-list;

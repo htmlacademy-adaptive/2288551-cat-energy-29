@@ -1,0 +1,7 @@
+.comment__title {
+  @include form-title;
+}
+
+.comment__field {
+  @include form-main-text;
+}

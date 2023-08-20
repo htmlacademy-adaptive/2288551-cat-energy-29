@@ -13,7 +13,7 @@
 // header
 @import"blocks/header/main-header.scss";
 @import"blocks/header/main-nav.scss";
-@import"blocks/header/site-list.scss";
+@import"blocks/header/toggle.scss";
 
 // footer
 @import"blocks/footer/main-footer.scss";
@@ -47,4 +47,5 @@
 @import"blocks/form/addition.scss";
 @import"blocks/form/form-field.scss";
 @import"blocks/form/owner-data.scss";
+@import"blocks/form/comment.scss";
 @import"blocks/form/weight-goal.scss";

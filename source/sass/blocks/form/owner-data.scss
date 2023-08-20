@@ -3,6 +3,19 @@
 }
 
 .email-owner__caption,
-.telephone__caption {
+.telephone__caption,
+.email-owner__field,
+.telephone__field {
   @include form-main-text;
+}
+
+.form__notification {
+  color: $title-color;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width:$width-tablet) {
+    font-size: 16px;
+  }
 }

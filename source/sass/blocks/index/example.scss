@@ -1,5 +1,11 @@
-.example {
-  position: relative;
+.example__wrapper {
+  padding: 0 20px;
+  @media (min-width:$width-tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width:$width-desktop) {
+    padding: 0 110px;
+  }
 }
 
 .example::before {
@@ -7,27 +13,50 @@
   position: absolute;
   background-color: #eaeaea;
   min-width: 100%;
-  padding: 20px;
   height: 659px;
   left: 0;
   z-index: -6;
+  padding-bottom: 40px;
   @media (min-width:$width-tablet) {
     height: 462px;
   }
   @media (min-width:$width-desktop) {
-
+    padding-bottom: 75px;
   }
 }
 
 .example__title {
     @include index-second-title;
     padding-top: 25px;
-    bottom: 0;
+    margin-bottom: 40px;
+    @media (min-width:$width-tablet) {
+      margin-bottom: 60px;
+    }
+    @media (min-width:$width-desktop) {
+      margin-bottom: 76px;
+    }
   }
 
   .example__description {
     @include index-main-text;
+    margin-bottom: 20px;
+    @media (min-width:$width-tablet) {
+      margin-bottom: 55px;
+    }
+    @media (min-width:$width-desktop) {
+      margin-bottom: 69px;
+    }
   }
+
+.data-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data {
+  border: $border;
+  border-radius: 5%;
+}
 
 .data__value {
     color: $title-color;

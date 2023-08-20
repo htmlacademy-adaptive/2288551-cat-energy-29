@@ -1,0 +1,37 @@
+.toggle {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.toggle__line::before,
+.toggle__line,
+.toggle__line::after {
+  position: absolute;
+  background-color: $title-color;
+  width: 24px;
+  height: 1.5px;
+  transition: all 0.25s;
+}
+
+.toggle__line {
+  top: 0;
+  right: 0;
+}
+
+.toggle__line::before{
+  content: "";
+  display: block;
+  top: 8px;
+  right: 0;
+}
+
+.toggle__line::after {
+  content: "";
+  display: block;
+  top: 16px;
+  right: 0;
+}
