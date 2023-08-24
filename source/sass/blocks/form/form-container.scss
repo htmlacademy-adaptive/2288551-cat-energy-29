@@ -11,6 +11,7 @@
 .form-container__title {
   @include first-title;
   margin-bottom: 37px;
+  color: $title-color;
   @media (min-width:$width-tablet) {
     margin-bottom: 54px;
   }

@@ -41,10 +41,12 @@
       border-bottom: 2px solid $main-page-color;
     }
   }
+  &--color_light {
   @media(min-width:$width-desktop) {
     color: $light-page-color;
     &:hover{
       border-bottom: 2px solid $light-page-color;
     }
   }
+}
 }

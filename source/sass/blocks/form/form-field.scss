@@ -2,3 +2,36 @@
 .form-field__field {
   @include form-main-text;
 }
+.form-field{
+  display: block;
+  width: 280px;
+  margin-bottom: 14px;
+  @media (min-width:$width-tablet) {
+    width: 630px;
+  }
+  @media (min-width:$width-desktop) {
+    width: 570px;
+  }
+}
+
+.form-field:last-child {
+  margin-bottom: 24px;
+  @media (min-width:$width-tablet) {
+    margin-bottom: 72px;
+  }
+  @media (min-width:$width-desktop) {
+    margin-bottom: 69px;
+  }
+}
+
+.form-field__caption {
+  margin-right: 13px;
+}
+
+.form-field__field {
+  display: inline;
+  padding: 14px 15px 13px;
+  @media (min-width:$width-tablet) {
+    padding: 11px 20px;
+  }
+}
