@@ -1,7 +1,26 @@
 .product-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
   color: $text-color;
   text-align: center;
   font-family: $main-font;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width:$width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.product-info__parameter {
+  text-align: left;
+  border-bottom: $border;
+  padding: 9px 0 6px;
+}
+
+.product-info__parameter_value {
+  text-align: right;
+  border-bottom: $border;
+  padding: 9px 0 6px;
 }

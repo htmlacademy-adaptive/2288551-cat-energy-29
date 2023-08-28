@@ -1,0 +1,43 @@
+.promo__title {
+  color: $light-page-color;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width:$width-tablet) and (max-width:$width-desktop) {
+    text-align: left;
+  }
+}
+
+.promo {
+  background:linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%, transparent),
+  url("../../../img/mobile-img/catalog-promo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 280px;
+  height: 290px;
+  margin-bottom: 35px;
+  background-size: cover;
+
+  @media (min-width:$width-tablet) {
+    background:linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%, transparent),
+    url("../../../img/tablet-img/catalog-promo.png");
+    background-repeat: no-repeat;
+    margin: 0 auto 76px;
+    height: 200px;
+    background-position: 50% 60%;
+    background-size: cover;
+  }
+
+  @media (min-width:$width-desktop) {
+    background:linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%, transparent),
+    url("../../../img/mobile-img/catalog-promo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 289px;
+    width: 245px;
+    margin: 0;
+  }
+}

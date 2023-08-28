@@ -1,20 +1,30 @@
 .products__title {
+  padding: 0 20px;
   @include first-title;
   margin-bottom: 41px;
   color: $title-color;
   @media (min-width:$width-tablet) {
     margin-bottom: 90px;
+    padding: 0 30px;
   }
   @media (min-width:$width-desktop) {
     margin-bottom: 85px;
+    padding: 0 110px;
   }
 }
 
 .products-list {
+  padding: 0;
+  border-top: $border;
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 68px;
+    gap: 60px;
+    border-top: none;
+    justify-content: center;
+  }
+  @media (min-width:$width-desktop) {
+    gap: 80px 62px;
   }
 }
 

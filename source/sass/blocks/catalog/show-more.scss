@@ -1,12 +1,16 @@
 .show-more {
+  display: block;
   list-style: none;
   width: 280px;
-  display: inline-block;
   text-align: center;
-  vertical-align: middle;
+  margin: 0 auto;
 
   @media (min-width:$width-tablet) {
     width: 324px;
+    height: 429px;
+    border: 2px solid $dark-page-color;
+    margin: 0;
+    margin-top: 81px;
   }
 
   @media (min-width:$width-desktop) {
@@ -22,6 +26,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
+
+  @media (min-width:$width-tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 150px;
+    margin: 0 auto 23px;
+  }
 }
 
 .show-more__description {
@@ -30,16 +41,32 @@
   font-family: $main-font;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 21px;
+
+  @media (min-width:$width-tablet) {
+    font-size: 16px;
+    line-height: 18p;
+    width: 165px;
+    margin: 0 auto 87px;
+  }
 }
 
-.show-more__button-text {
+.show-more__button {
   color: $text-color;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: dark-page-color;
-  border: dark-page-color;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: $dark-page-color;
+  border: $dark-page-color;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 100%;
+
+  @media (min-width:$width-tablet) {
+    width: 249px;
+  }
+  @media (min-width:$width-desktop) {
+    width: 168px;
+  }
 }
