@@ -1,21 +1,71 @@
-.owner-data__title {
-  @include form-title;
+.owner-data {
+  margin-bottom: 10px;
+  @media (min-width:$width-tablet) {
+    margin-bottom: 45px;
+  }
+  @media (min-width:$width-desktop) {
+    margin-bottom: 70px;
+  }
 }
 
-.email-owner__caption,
+.owner-data__title {
+  @include form-title;
+  margin-bottom: 35px;
+  @media (min-width:$width-tablet) {
+    margin-bottom: 76px;
+  }
+}
+
+.email__caption,
 .telephone__caption,
-.email-owner__field,
+.email__field,
 .telephone__field {
   @include form-main-text;
 }
 
-.form__notification {
-  color: $title-color;
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 16px;
+.email__caption,
+.telephone__caption {
+  white-space: nowrap;
+}
 
+.owner-data__item {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 14px;
+  align-items: center;
   @media (min-width:$width-tablet) {
-    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width:$width-desktop) {
+    display: inline-block;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+}
+
+.email__field,
+.telephone__field {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+  border: none;
+  outline: $border;
+  padding: 14px 23px 13px 15px;
+  width: 100%;
+}
+
+.email__field {
+  @media (min-width:$width-desktop) {
+    width: 494px;
+  }
+}
+
+.telephone__field {
+  @media (min-width:$width-desktop) {
+    width: 472px;
   }
 }

@@ -2,12 +2,13 @@
 .form-field__field {
   @include form-main-text;
 }
+
 .form-field{
-  display: block;
-  width: 280px;
+  display: flex;
+  min-width: 280px;
   margin-bottom: 14px;
   @media (min-width:$width-tablet) {
-    width: 630px;
+    width: 628px;
   }
   @media (min-width:$width-desktop) {
     width: 570px;
@@ -20,18 +21,39 @@
     margin-bottom: 72px;
   }
   @media (min-width:$width-desktop) {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 }
 
 .form-field__caption {
   margin-right: 13px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .form-field__field {
-  display: inline;
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+    border: none;
+  }
+
   padding: 14px 15px 13px;
+  outline: 1px solid #E7E7E7;
+  transition: .3s;
+  width: 100%;
+
   @media (min-width:$width-tablet) {
     padding: 11px 20px;
+  }
+  &:hover {
+    outline: $border;
+  }
+  &:focus{
+    outline: 2px solid $text-color;
   }
 }

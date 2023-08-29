@@ -45,42 +45,50 @@
     </div>
     <section class="form">
       <form class="form-set" action="https://echo.htmlacademy.ru/" method="post">
-        <!-- class="form-set" может не нужен  -->
         <fieldset class="form-set__about-cat cat-data">
-          <label class="cat-data__one form-field">
+          <label class="cat-data__item form-field">
             <span class="form-field__caption">ИМЯ:<sup>*</sup></span>
             <input class="form-field__field" type="text" name="cat-name" placeholder="Барсик" required>
           </label>
-          <label class="cat-data__two form-field">
+          <label class="cat-data__item form-field">
             <span class="form-field__caption">Вес (кг):<sup>*</sup></span>
-            <input class="form-field__field" type="number" name="cat-weight" placeholder="7" required>
+            <input class="form-field__field form-field__field--number" type="number" name="cat-weight" placeholder="7" required>
           </label>
-          <label class="cat-data__three form-field">
+          <label class="cat-data__item form-field">
             <span class="form-field__caption">Возраст (лет):</span>
-            <input class="form-field__field" type="number" name="cat-age" placeholder="7">
+            <input class="form-field__field form-field__field--number" type="number" name="cat-age" placeholder="7">
           </label>
         </fieldset>
         <fieldset class="form-set__cat-weight weight-goal">
-          <div class="weight-goal__one">
-            <input type="radio" name="cat-goal" id="weight-loss" value="weight-loss" checked>
-            <label class="weight-goal__title" for="weight-loss">похудение</label>
+          <div class="weight-goal__item-wrapper">
+            <label class="weight-goal__label radio">
+              <input class="radio__input" type="radio" name="cat-goal" id="weight-loss" value="weight-loss" checked>
+              <span class="radio__button"></span>
+              <span class="radio__title">похудение</span>
+            </label>
           </div>
-          <div class="weight-goal__two">
-            <input type="radio" name="cat-goal" id="weight-gain" value="weight-gain">
-            <label class="weight-goal__title" for="weight-gain">Набор массы</label>
+          <div class="weight-goal__item-wrapper">
+            <label class="weight-goal__label radio">
+              <input class="radio__input" type="radio" name="cat-goal" id="weight-gain" value="weight-gain">
+              <span class="radio__button"></span>
+              <span class="radio__title">Набор массы</span>
+          </label>
           </div>
-          <div class="weight-goal__three">
-            <input type="radio" name="cat-goal" id="weight-none" value="ask-advice">
-            <label class="weight-goal__title" for="weight-none">Не знаю (Нужен ваш совет)</label>
+          <div class="weight-goal__item-wrapper">
+            <label class="weight-goal__label radio">
+              <input class="radio__input" type="radio" name="cat-goal" id="weight-none" value="ask-advice">
+              <span class="radio__button"></span>
+              <span class="radio__title">Не знаю (Нужен ваш совет)</span>
+            </label>
           </div>
         </fieldset>
         <fieldset class="form-set__about-owner owner-data">
           <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
-          <label class="owner-data__email email-owner">
-            <span class="email-owner__caption">E-mail:<sup>*</sup></span>
-            <input class="email-owner__field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <label class="owner-data__item email">
+            <span class="email__caption">E-mail:<sup>*</sup></span>
+            <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label class="owner-data__number telephone">
+          <label class="owner-data__item telephone">
             <span class="telephone__caption">Телефон:<sup>*</sup></span>
             <input class="telephone__field" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
           </label>
@@ -114,8 +122,8 @@
           </div>
         </fieldset>
         <input class="form-set__button order-button" type="submit" value="отправить заявку">
+        <span class="form-set__notification"><sup>*</sup> — Обязательные поля</span>
       </form>
-      <span class="form__notification"><sup>*</sup> — Обязательные поля</span>
     </section>
     <section class="contact">
       <div class="contact__wrapper contact__wrapper--dark-color">

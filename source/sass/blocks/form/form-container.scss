@@ -1,11 +1,14 @@
 .main-form-container {
-  padding: 0 20px;
-  @media (min-width:$width-tablet) {
-    padding: 0 30px;
-  }
   @media (min-width:$width-desktop) {
     padding: 0 110px;
   }
+}
+
+.form-container__intro {
+  padding: 0 20px;
+    @media (min-width:$width-tablet) {
+      padding: 0 68px 0 70px;
+    }
 }
 
 .form-container__title {
@@ -14,6 +17,9 @@
   color: $title-color;
   @media (min-width:$width-tablet) {
     margin-bottom: 54px;
+  }
+  @media (min-width:$width-desktop) {
+    margin-bottom: 55px;
   }
 }
 
