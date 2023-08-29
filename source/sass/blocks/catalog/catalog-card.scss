@@ -33,9 +33,9 @@
 }
 
 .catalog-card__image {
-  margin: 0 auto;
+  margin: auto;
   @media (min-width:$width-tablet) {
-    margin-bottom: 34px;
+    margin: 0 auto 34px;
   }
 }
 

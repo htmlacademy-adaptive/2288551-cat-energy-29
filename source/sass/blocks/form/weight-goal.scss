@@ -67,6 +67,7 @@
 .radio:hover .radio__title {
   color: $subtitle-color;
 }
+
 .radio .radio__input:checked + .radio__button::before{
   content: "";
   position: absolute;

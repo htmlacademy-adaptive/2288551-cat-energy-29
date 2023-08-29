@@ -56,16 +56,19 @@
   outline: $border;
   padding: 14px 23px 13px 15px;
   width: 100%;
+  @media (min-width:$width-tablet) {
+    margin-left: 13px;
+  }
 }
 
 .email__field {
   @media (min-width:$width-desktop) {
-    width: 494px;
+    width: 490px;
   }
 }
 
 .telephone__field {
   @media (min-width:$width-desktop) {
-    width: 472px;
+    width: 470px;
   }
 }

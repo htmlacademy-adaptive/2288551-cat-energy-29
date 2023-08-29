@@ -96,29 +96,41 @@
         <fieldset class="form-set__review comment">
           <label>
             <h2 class="comment__title">Комментарий</h2>
-            <textarea class="comment__field" name="comment" rows="10"
+            <textarea class="comment__field" name="comment" rows="7"
               cols="30">Расскажите обо всех повадках кота</textarea>
           </label>
         </fieldset>
         <fieldset class="form-set__extra addition">
-          <legend>
+          <legend class="addition__legend">
             <h2 class="addition__title">Дополнительно</h2>
           </legend>
-          <div class="addition__item">
-            <input type="checkbox" name="sweetner" id="sweetner" value="sweetner" checked>
-            <label for="sweetner">сахарозаменитель</label>
+          <div class="addition__item checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="sweetner" id="sweetner" value="sweetner" checked>
+              <span class="checkbox__button"></span>
+              <span class="checkbox__title">сахарозаменитель</span>
+            </label>
           </div>
           <div class="addition__item">
-            <input type="checkbox" name="water" id="water" value="water">
-            <label for="water">питьевая вода</label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="water" id="water" value="water">
+              <span class="checkbox__button"></span>
+              <span class="checkbox__title">питьевая вода</span>
+            </label>
           </div>
           <div class="addition__item">
-            <input type="checkbox" name="milk" id="milk" value="milk">
-            <label for="milk">молоко</label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="milk" id="milk" value="milk">
+              <span class="checkbox__button"></span>
+              <span class="checkbox__title">молоко</span>
+            </label>
           </div>
           <div class="addition__item">
-            <input type="checkbox" name="vitamins" id="vitamins" value="vitamins">
-            <label for="vitamins">витамины</label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
+              <span class="checkbox__button"></span>
+              <span class="checkbox__title">витамины</span>
+            </label>
           </div>
         </fieldset>
         <input class="form-set__button order-button" type="submit" value="отправить заявку">

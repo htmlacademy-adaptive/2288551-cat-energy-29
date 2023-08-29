@@ -1,8 +1,84 @@
+.addition {
+  margin-bottom: 21px;
+
+  @media (min-width:$width-tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width:$width-desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.addition__legend {
+  margin-bottom: 34px;
+
+  @media (min-width:$width-tablet) {
+    margin-bottom: 57px;
+  }
+}
+
 .addition__title {
   @include form-title;
 }
 
 .addition__item {
   @include form-main-text;
-  color: $title-color;
+  display: flex;
+  margin-bottom: 13px;
+
+  @media (min-width:$width-tablet) {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 300px;
+  }
+
+  @media (min-width:$width-desktop) {
+    margin-bottom: 0;
+  }
+}
+
+// stylization of checkbox button
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+
+  @media (min-width:$width-tablet) {
+    gap: 20px;
+  }
+}
+
+.checkbox__input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.checkbox__button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: $border;
+  outline: none;
+}
+
+.checkbox__label:hover .checkbox__title {
+  color: $subtitle-color;
+}
+
+.checkbox__label .checkbox__input:checked+.checkbox__button::before {
+  content: "";
+  position: absolute;
+  background: url("../../../img/icons/checkmark.svg") no-repeat;
+  background-position: 110% 110%;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
 }

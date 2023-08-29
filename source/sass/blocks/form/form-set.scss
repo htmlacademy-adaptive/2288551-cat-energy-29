@@ -4,32 +4,57 @@
 .form-set__extra {
   @include reset-fieldset;
   padding: 0 20px;
+
   @media (min-width:$width-tablet) {
     padding: 0 68px 0 70px;
   }
+
   @media (min-width:$width-desktop) {
     padding: 0;
   }
 }
 
-.form-set__button,
 .form-set__notification {
-  margin: 0 20px;
-  @media (min-width:$width-tablet) {
-    margin: 0 68px 0 70px;
-  }
-  @media (min-width:$width-desktop) {
-    margin: 0 110px;
-  }
-}
-
-.form-set__notification {
+  display: block;
+  margin: 0 0 32px 84px;
   color: $title-color;
   font-family: $main-font;
   font-size: 14px;
   line-height: 16px;
 
   @media (min-width:$width-tablet) {
+    display: inline;
+    margin: 0;
     font-size: 16px;
+  }
+}
+
+.form-set__button {
+  display: block;
+  margin: 0 20px 21px;
+
+  @media (min-width:$width-tablet) {
+    display: inline-block;
+    margin: 0 68px 60px 70px;
+    width: 284px;
+  }
+
+  @media (min-width:$width-desktop) {
+    margin: 0 80px 79px 0;
+    width: 570px;
+  }
+}
+
+.form-set__about-cat {
+  @media (min-width:$width-desktop) {
+    display: inline-block;
+    margin-right: 80px;
+  }
+}
+
+.form-set__cat-weight {
+  @media (min-width:$width-desktop) {
+    display: inline-block;
+    width: 565px;
   }
 }
