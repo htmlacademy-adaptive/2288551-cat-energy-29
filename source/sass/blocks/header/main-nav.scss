@@ -1,6 +1,7 @@
 .main-nav {
   z-index: 6;
   @include reset-list;
+
   @media(min-width:$width-desktop) {
     margin: 0;
     margin-left: 133px;
@@ -20,6 +21,7 @@
     display: inline-block;
     border-top: none;
     padding-bottom: 25px;
+
     &:not(:last-child) {
       margin-right: 33px;
     }
@@ -31,6 +33,7 @@
 
   @media(min-width:$width-desktop) {
     padding: 0;
+
     &:not(:last-child) {
       margin-right: 0;
     }
@@ -50,7 +53,7 @@
     padding: 0;
     padding-bottom: 8px;
     font-size: 18px;
-  line-height: 24px;
+    line-height: 24px;
 
     &--current {
       border-bottom: 2px solid $main-page-color;
@@ -67,6 +70,7 @@
 
   @media(min-width:$width-desktop) {
     font-size: 20px;
+
     &--current-light {
       border-bottom: 2px solid $light-page-color;
     }

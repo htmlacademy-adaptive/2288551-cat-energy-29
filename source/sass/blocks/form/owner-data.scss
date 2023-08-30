@@ -1,8 +1,10 @@
 .owner-data {
   margin-bottom: 10px;
+
   @media (min-width:$width-tablet) {
     margin-bottom: 45px;
   }
+
   @media (min-width:$width-desktop) {
     margin-bottom: 70px;
   }
@@ -11,6 +13,7 @@
 .owner-data__title {
   @include form-title;
   margin-bottom: 35px;
+
   @media (min-width:$width-tablet) {
     margin-bottom: 76px;
   }
@@ -33,6 +36,7 @@
   gap: 13px;
   margin-bottom: 14px;
   align-items: center;
+
   @media (min-width:$width-tablet) {
     margin-bottom: 20px;
   }
@@ -40,6 +44,7 @@
   @media (min-width:$width-desktop) {
     display: inline-block;
     margin-bottom: 0;
+
     &:not(:last-child) {
       margin-right: 80px;
     }
@@ -56,6 +61,7 @@
   outline: $border;
   padding: 14px 23px 13px 15px;
   width: 100%;
+
   @media (min-width:$width-tablet) {
     margin-left: 13px;
   }

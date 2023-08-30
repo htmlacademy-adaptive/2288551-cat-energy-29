@@ -2,10 +2,12 @@
   text-align: center;
   background-color: $dark-page-color;
   padding: 40px 20px;
+
   @media (min-width:$width-tablet) {
     display: flex;
     padding: 61px 30px;
   }
+
   @media (min-width:$width-desktop) {
     padding: 66px 110px;
   }
@@ -26,15 +28,16 @@
 
 @media (max-width:$width-tablet) {
   .main-footer__logo-link::after {
-      content: "";
-      display: block;
-      border-bottom: $border;
-      margin: 20px 0;
-    }
+    content: "";
+    display: block;
+    border-bottom: $border;
+    margin: 20px 0;
+  }
+
   .main-footer__social-wrapper::after {
     content: "";
-      display: block;
-      border-bottom: $border;
-      margin: 20px 0;
+    display: block;
+    border-bottom: $border;
+    margin: 20px 0;
   }
 }

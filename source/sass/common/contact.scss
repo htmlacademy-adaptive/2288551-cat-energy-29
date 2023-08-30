@@ -1,21 +1,26 @@
 .contact {
   background-color: $light-page-color;
+
   @media (min-width:$width-desktop) {
     position: relative;
   }
 }
+
 .contact__wrapper {
   background-color: $light-page-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 26px 20px;
+
   @media (min-width:$width-tablet) {
-  padding: 60px 70px;
+    padding: 60px 70px;
   }
+
   &--dark-color {
     background-color: $dark-page-color;
   }
+
   @media (min-width:$width-desktop) {
     background-color: $light-page-color;
     position: absolute;
@@ -33,6 +38,7 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 180px;
+
   @media (min-width:$width-tablet) {
     font-size: 20px;
     line-height: 26px;
@@ -46,10 +52,12 @@
   line-height: 20px;
   font-style: normal;
   width: 157px;
+
   @media (min-width:$width-tablet) {
     font-size: 16px;
     text-align: right;
   }
+
   @media (min-width:$width-desktop) {
     text-align: left;
   }
