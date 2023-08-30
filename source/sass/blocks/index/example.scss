@@ -1,4 +1,6 @@
-.example__wrapper {
+.example__wrapper,
+.example__title,
+.example__image {
   padding: 0 20px;
   @media (min-width:$width-tablet) {
     padding: 0 30px;
@@ -8,37 +10,32 @@
   }
 }
 
-.example::before {
-  content: "";
-  position: absolute;
+.example__wrapper,
+.example__title,
+.example__image {
   background-color: #eaeaea;
-  min-width: 100%;
-  height: 659px;
-  left: 0;
   z-index: -6;
-  padding-bottom: 40px;
-  @media (min-width:$width-tablet) {
-    height: 462px;
-  }
-  @media (min-width:$width-desktop) {
-    padding-bottom: 75px;
-  }
 }
 
 .example__title {
     @include index-second-title;
     padding-top: 25px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    margin: 0;
     @media (min-width:$width-tablet) {
       margin-bottom: 60px;
+      padding: 0 30px;
+      background-color: $light-page-color;
     }
     @media (min-width:$width-desktop) {
       margin-bottom: 76px;
+      padding: 0 110px;
     }
   }
 
   .example__description {
     @include index-main-text;
+    margin-top: 0;
     margin-bottom: 20px;
     @media (min-width:$width-tablet) {
       margin-bottom: 55px;
@@ -48,14 +45,38 @@
     }
   }
 
+  .example__wrapper {
+    padding-bottom: 20px;
+    @media (min-width:$width-tablet) {
+      padding: 0 30px;
+      margin-bottom: 100px;
+      background-color: $light-page-color;
+    }
+    @media (min-width:$width-desktop) {
+      padding: 0 110px;
+    }
+  }
+
 .data-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  @media (min-width:$width-tablet) {
+    display: flex;
+  }
 }
 
 .data {
+  margin: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
   border: $border;
   border-radius: 5%;
+  &:first-of-type {
+    margin-right: 32px;
+    @media (min-width:$width-tablet) {
+      margin-right: 43px;
+    }
+  }
 }
 
 .data__value {
@@ -63,6 +84,7 @@
     font-family: $secondary-font;
     font-size: 24px;
     line-height: 24px;
+    margin-bottom: 8px;
   }
 
   .data__info {
@@ -70,12 +92,40 @@
     font-family: $main-font;
     font-size: 12px;
     line-height: 12px;
+    margin: 0;
   }
 
 .price {
+  margin: 0;
+  text-align: center;
   color: $title-color;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  @media (min-width:$width-tablet) {
+    font-size: 20px;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+  }
+  @media (min-width:$width-desktop) {
+    right: 110px;
+  }
+}
+
+.price__info {
+  display: inline;
+  @media (min-width:$width-tablet) {
+    display: block;
+  }
+}
+
+.price__value {
+  display: inline;
+  margin: 0;
+  @media (min-width:$width-tablet) {
+    display: block;
+  }
 }

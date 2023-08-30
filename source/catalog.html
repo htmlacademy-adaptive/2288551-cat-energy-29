@@ -11,32 +11,31 @@
 
 <body class="page-container">
   <header class="main-header">
-    <div class="header-container">
-      <a class="main-header__logo" href="#">
-        <picture>
-          <img class="main-header__logo_mobile" src="img/icons/logo-mobile.svg" width="33" height="38"
-            alt="логотип Кэт энерджи">
-          <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-        </picture>
-      </a>
-      <button class="toggle" type="button" aria-label="открыть меню">
-        <div class="toggle__line"></div>
-      </button>
-      <nav>
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <a href="#">
+      <picture class="main-header__logo">
+        <img class="main-header__logo_mobile" src="img/icons/logo-mobile.svg" width="33" height="38"
+          alt="логотип Кэт энерджи">
+        <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      </picture>
+    </a>
+    <nav class="main-header__nav">
+      <input class="toggle__input" id="toggle-button" type="checkbox" />
+      <label class="toggle__label" for="toggle-button">
+        <span class="toggle__line"></span>
+      </label>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+</header>
   <main class="main-catalog-container">
     <section class="products">
       <h1 class="products__title">Каталог продукции</h1>

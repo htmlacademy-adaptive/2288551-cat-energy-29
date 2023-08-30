@@ -4,12 +4,20 @@
   align-items: center;
   @include tariff-title;
   margin-bottom: 29px;
+  @media (min-width:$width-tablet) {
+    display: inline-block;
+  }
 }
 
 .tariff-card__description {
   @include index-main-text;
   padding-bottom: 23px;
-  border-bottom: $border;
+  border-bottom: 1px solid #d9d9d9;
+  @media (min-width:$width-tablet) {
+    display: inline-block;
+    width: 340px;
+    border: none;
+  }
 }
 
 .tariff-card__link {
@@ -32,6 +40,7 @@
 
 .tariff-card__title-wrapper {
   display: flex;
+
   &::before {
     content: "";
     display: inline-block;
@@ -40,11 +49,13 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 20px;
+
     @media(min-width:$width-tablet) {
-      width: 200px;
-      height: 200px;
+      display: none;
     }
+
     @media(min-width:$width-desktop) {
+      display: inline-block;
       width: 100px;
       height: 100px;
     }
@@ -56,6 +67,22 @@
   padding: 24px 20px 18px;
   margin-bottom: 20px;
   position: relative;
+
+  @media(min-width:$width-tablet) {
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: $main-page-color;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 20px;
+      @media(min-width:$width-desktop) {
+        display: none;
+      }
+    }
+  }
+
   @media(min-width:$width-desktop) {
     width: 570px;
   }

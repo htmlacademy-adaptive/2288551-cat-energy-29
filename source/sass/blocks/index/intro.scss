@@ -1,21 +1,42 @@
 .intro {
   display: flex;
   flex-direction: column;
+
+  @media (min-width:$width-desktop) {
+    top: -200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 720px, transparent 720px),
+      url("../../../img/desktop-img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 720px 694px;
+    min-height: 694px;
+    z-index: 0;
+  }
+}
+
+.main-index-container .intro {
+  position: relative;
 }
 
 .intro__wrapper {
   text-align: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 74%, transparent 74% 100%),
-  url("../../../img/mobile-img/index-intro-background.png");
+  background-color: #63a63c;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%, transparent 100%),
+    url("../../../img/mobile-img/index-intro-background.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: 320px 302px;
   min-height: 302px;
 
   @media (min-width:$width-tablet) {
     text-align: left;
     background-image: none;
     display: inline-block;
+    background-color: transparent;
+  }
+
+  @media (min-width:$width-desktop) {
+    margin-top: 200px;
   }
 }
 
@@ -25,11 +46,11 @@
   padding: 27px 20px 25px;
 
   @media (min-width:$width-tablet) {
-    padding: 0 30px 40px;
+    padding: 0 120px 40px;
   }
 
   @media (min-width:$width-desktop) {
-    padding: 0 110px;
+    padding: 0 110px 40px;
   }
 }
 
@@ -44,7 +65,7 @@
 
   @media (min-width:$width-tablet) {
     color: $title-color;
-    padding: 0 30px 50px;
+    padding: 0 120px 50px;
     font-size: 20px;
   }
 
@@ -53,28 +74,43 @@
   }
 }
 
+.intro__img {
+  margin: -140px auto 0;
+
+  @media (min-width:$width-tablet) {
+    margin: -110px 30px 0;
+  }
+  @media (min-width:$width-desktop) {
+    margin: -250px auto 0;
+  }
+}
+
 .intro__link {
   display: block;
-  margin: 3px 20px 20px;
+  margin: 3px auto 20px;
+  padding: 8px 0;
+  width: 280px;
   color: $light-page-color;
   text-align: center;
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;
+  background-color: $main-page-color;
 
   @media (min-width:$width-tablet) {
+    position: absolute;
+    left: 120px;
+    bottom: 526px;
     font-size: 20px;
     line-height: 26px;
-    margin: 0 30px;
+    width: 244px;
   }
 
   @media (min-width:$width-desktop) {
     margin: 0 110px;
+    position: absolute;
+    left: 0px;
+    bottom: 226px;
   }
-}
-
-.intro__link-text {
-  background-color: $main-page-color;
-  padding: 8px 44px;
 }
