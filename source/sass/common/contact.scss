@@ -1,7 +1,7 @@
 .contact {
   background-color: $light-page-color;
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     position: relative;
   }
 }
@@ -13,7 +13,7 @@
   justify-content: space-between;
   padding: 26px 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 60px 70px;
   }
 
@@ -21,7 +21,7 @@
     background-color: $dark-page-color;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     background-color: $light-page-color;
     position: absolute;
     width: 565px;
@@ -39,7 +39,7 @@
   text-transform: uppercase;
   width: 180px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 26px;
   }
@@ -53,12 +53,12 @@
   font-style: normal;
   width: 157px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 16px;
     text-align: right;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     text-align: left;
   }
 }

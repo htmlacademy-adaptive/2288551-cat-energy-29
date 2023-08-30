@@ -1,17 +1,17 @@
 .addition-products {
   padding: 0 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0 30px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px;
   }
 }
 
 .addition-products__wrapper {
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 975px 1fr;
   }
@@ -24,7 +24,7 @@
   line-height: 24px;
   margin-bottom: 36px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
@@ -35,7 +35,7 @@
   padding: 0;
   margin: 0;
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     width: 895px;
   }
 }
@@ -45,13 +45,13 @@
   border-top: $border;
   padding-top: 13px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding-top: 26px;
     display: grid;
     grid-template-columns: 50% 50%;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 326px 326px 244px;
   }
@@ -60,11 +60,11 @@
     border-bottom: $border;
     margin-bottom: 35px;
 
-    @media (min-width:$width-tablet) {
+    @media (min-width: $width-tablet) {
       margin-bottom: 69px;
     }
 
-    @media (min-width:$width-desktop) {
+    @media (min-width: $width-desktop) {
       margin-bottom: 85px;
     }
   }
@@ -79,13 +79,13 @@
   text-transform: uppercase;
   margin-bottom: 13px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 25px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     display: flex;
     align-items: center;
   }
@@ -100,7 +100,7 @@
   line-height: 14px;
   margin-bottom: 12px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: 1fr 131px;
     text-align: end;
@@ -109,7 +109,7 @@
     margin: 0 0 22px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     text-align: start;
     align-items: center;
     display: grid;
@@ -121,12 +121,12 @@
   width: 100%;
   margin-bottom: 19px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 28px;
     grid-column: 1/3;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 17px;
     width: 244px;
     grid-column: 3/4;

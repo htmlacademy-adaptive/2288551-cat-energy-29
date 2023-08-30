@@ -2,21 +2,16 @@
 .example__title,
 .example__image {
   padding: 0 20px;
+  background-color: #eaeaea;
+  z-index: -6;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0 30px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px;
   }
-}
-
-.example__wrapper,
-.example__title,
-.example__image {
-  background-color: #eaeaea;
-  z-index: -6;
 }
 
 .example__title {
@@ -25,13 +20,13 @@
   padding-bottom: 40px;
   margin: 0;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 60px;
     padding: 0 30px;
     background-color: $light-page-color;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 76px;
     padding: 0 110px;
   }
@@ -42,11 +37,11 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 55px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 69px;
   }
 }
@@ -54,13 +49,13 @@
 .example__wrapper {
   padding-bottom: 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0 30px;
     margin-bottom: 100px;
     background-color: $light-page-color;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px;
   }
 }
@@ -68,7 +63,7 @@
 .data-wrapper {
   text-align: center;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: flex;
   }
 }
@@ -84,7 +79,7 @@
   &:first-of-type {
     margin-right: 32px;
 
-    @media (min-width:$width-tablet) {
+    @media (min-width: $width-tablet) {
       margin-right: 43px;
     }
   }
@@ -115,7 +110,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 20px;
     text-align: right;
     display: inline-block;
@@ -123,7 +118,7 @@
     right: 30px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     right: 110px;
   }
 }
@@ -131,7 +126,7 @@
 .price__info {
   display: inline;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: block;
   }
 }
@@ -140,7 +135,7 @@
   display: inline;
   margin: 0;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: block;
   }
 }

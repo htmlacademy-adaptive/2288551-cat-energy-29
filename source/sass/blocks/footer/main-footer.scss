@@ -3,12 +3,12 @@
   background-color: $dark-page-color;
   padding: 40px 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: flex;
     padding: 61px 30px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 66px 110px;
   }
 }
@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-@media (max-width:$width-tablet) {
+@media (max-width: $width-tablet) {
   .main-footer__logo-link::after {
     content: "";
     display: block;

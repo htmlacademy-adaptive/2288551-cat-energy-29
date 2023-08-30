@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     top: -200px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 720px, transparent 720px),
       url("../../../img/desktop-img/index-background-desktop.png");
@@ -28,14 +28,14 @@
   background-size: 320px 302px;
   min-height: 302px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     text-align: left;
     background-image: none;
     display: inline-block;
     background-color: transparent;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-top: 200px;
   }
 }
@@ -45,11 +45,11 @@
   margin: 0 auto;
   padding: 27px 20px 25px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0 120px 40px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px 40px;
   }
 }
@@ -63,13 +63,13 @@
   text-transform: uppercase;
   line-height: 100%;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     color: $title-color;
     padding: 0 120px 50px;
     font-size: 20px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px;
   }
 }
@@ -77,11 +77,11 @@
 .intro__img {
   margin: -140px auto 0;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin: -110px 30px 0;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin: -250px auto 0;
   }
 }
@@ -99,7 +99,7 @@
   line-height: 20px;
   background-color: $main-page-color;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     position: absolute;
     left: 120px;
     bottom: 526px;
@@ -108,10 +108,10 @@
     width: 244px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin: 0 110px;
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: 226px;
   }
 }

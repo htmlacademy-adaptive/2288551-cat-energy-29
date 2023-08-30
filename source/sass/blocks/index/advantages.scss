@@ -2,13 +2,13 @@
   padding: 0 20px;
   margin-bottom: 53px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0 30px 47px;
     margin-bottom: 45px;
     border: 1px solid #e6e6e6;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 0 110px;
     margin-bottom: 69px;
     border: none;
@@ -35,7 +35,7 @@
   gap: 26px;
   counter-reset: num;
 
-  @media(min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,7 +49,7 @@
   width: 280px;
   min-height: 60px;
 
-  @media(min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     flex-wrap: wrap;
     width: 247px;
     min-height: 280px;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width:$width-tablet) {
+@media (min-width: $width-tablet) {
   .advantages__list .advantages__item {
     position: relative;
   }

@@ -1,11 +1,11 @@
 .owner-data {
   margin-bottom: 10px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 45px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 70px;
   }
 }
@@ -14,7 +14,7 @@
   @include form-title;
   margin-bottom: 35px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 76px;
   }
 }
@@ -37,11 +37,11 @@
   margin-bottom: 14px;
   align-items: center;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 20px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     display: inline-block;
     margin-bottom: 0;
 
@@ -54,27 +54,25 @@
 .email__field,
 .telephone__field {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
   margin: 0;
   border: none;
   outline: $border;
   padding: 14px 23px 13px 15px;
   width: 100%;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-left: 13px;
   }
 }
 
 .email__field {
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     width: 490px;
   }
 }
 
 .telephone__field {
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     width: 470px;
   }
 }

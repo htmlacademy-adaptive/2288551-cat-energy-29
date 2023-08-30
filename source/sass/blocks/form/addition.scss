@@ -1,11 +1,11 @@
 .addition {
   margin-bottom: 21px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 20px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 60px;
   }
 }
@@ -13,7 +13,7 @@
 .addition__legend {
   margin-bottom: 34px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 57px;
   }
 }
@@ -27,13 +27,13 @@
   display: flex;
   margin-bottom: 13px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 32px;
     display: inline-block;
     width: 300px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 0;
   }
 }
@@ -45,7 +45,7 @@
   gap: 15px;
   cursor: pointer;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     gap: 20px;
   }
 }
@@ -59,8 +59,6 @@
 
 .checkbox__button {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: inline-block;
   position: relative;
   width: 40px;
@@ -73,7 +71,7 @@
   color: $subtitle-color;
 }
 
-.checkbox__label .checkbox__input:checked+.checkbox__button::before {
+.checkbox__label .checkbox__input:checked + .checkbox__button::before {
   content: "";
   position: absolute;
   background: url("../../../img/icons/checkmark.svg") no-repeat;

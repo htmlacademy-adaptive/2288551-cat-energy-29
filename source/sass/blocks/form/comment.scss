@@ -1,11 +1,11 @@
 .comment {
   margin-bottom: 23px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 65px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 70px;
   }
 }
@@ -14,11 +14,11 @@
   @include form-title;
   margin-bottom: 38px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin-bottom: 87px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 78px;
   }
 }
@@ -29,13 +29,13 @@
   padding: 14px;
   border: 1px solid #e7e7e7;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 11px 20px;
     height: 175px;
     line-height: 30px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 9px 20px;
   }
 }

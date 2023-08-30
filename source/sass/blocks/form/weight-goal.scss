@@ -6,13 +6,13 @@
   margin: 0;
   margin-bottom: 26px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     border: 1px solid #d9d9d9;
     padding: 23px 27px 27px;
     margin: 0 68px 65px 70px;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 25px 28px;
     margin: 0;
   }
@@ -21,7 +21,7 @@
 .weight-goal__item-wrapper {
   padding: 0 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 0;
   }
 }
@@ -40,7 +40,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     gap: 20px;
   }
 }
@@ -73,7 +73,7 @@
   color: $subtitle-color;
 }
 
-.radio .radio__input:checked+.radio__button::before {
+.radio .radio__input:checked + .radio__button::before {
   content: "";
   position: absolute;
   top: 50%;

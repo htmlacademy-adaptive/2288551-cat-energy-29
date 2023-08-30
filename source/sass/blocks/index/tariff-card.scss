@@ -1,10 +1,11 @@
 .tariff-card__title {
   display: flex;
   align-items: center;
+
   @include tariff-title;
   margin-bottom: 29px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: inline-block;
   }
 }
@@ -14,7 +15,7 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     display: inline-block;
     width: 340px;
     border: none;
@@ -49,11 +50,11 @@
     border-radius: 50%;
     margin-right: 20px;
 
-    @media(min-width:$width-tablet) {
+    @media (min-width: $width-tablet) {
       display: none;
     }
 
-    @media(min-width:$width-desktop) {
+    @media (min-width: $width-desktop) {
       display: inline-block;
       width: 100px;
       height: 100px;
@@ -67,7 +68,7 @@
   margin-bottom: 20px;
   position: relative;
 
-  @media(min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     &::before {
       content: "";
       display: inline-block;
@@ -77,13 +78,13 @@
       border-radius: 50%;
       margin-right: 20px;
 
-      @media(min-width:$width-desktop) {
+      @media (min-width: $width-desktop) {
         display: none;
       }
     }
   }
 
-  @media(min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     width: 570px;
   }
 }

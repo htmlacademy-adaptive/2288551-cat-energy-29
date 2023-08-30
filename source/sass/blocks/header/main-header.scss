@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     padding: 25px 33px 0 30px;
     margin-bottom: 60px;
     width: 100%;
@@ -12,7 +12,7 @@
     justify-content: space-between;
   }
 
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     padding: 55px 110px 0;
     z-index: 3;
   }
@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     top: 16px;
     left: 103px;
   }
@@ -31,13 +31,13 @@
 .main-header__logo_text {
   margin: 0 56px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     margin: 0 13px;
   }
 }
 
 .main-header__nav {
-  @media (min-width:$width-desktop) {
+  @media (min-width: $width-desktop) {
     position: absolute;
     right: 110px;
   }
