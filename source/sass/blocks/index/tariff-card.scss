@@ -72,6 +72,7 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
+
     &--slim {
       top: 81px;
       right: 93px;
@@ -87,6 +88,7 @@
 
   @media (min-width: $width-desktop) {
     position: absolute;
+
     &--slim {
       top: 41px;
       right: auto;
@@ -139,6 +141,7 @@
     content: url("../img/icons/arrow.svg");
     position: absolute;
     margin-left: 15px;
+    
     @media (min-width: $width-tablet) {
       margin-left: 25px;
     }
