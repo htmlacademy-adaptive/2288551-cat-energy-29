@@ -74,7 +74,7 @@
 .checkbox__label .checkbox__input:checked + .checkbox__button::before {
   content: "";
   position: absolute;
-  background: url("../../../img/icons/checkmark.svg") no-repeat;
+  background: url("../img/icons/checkmark.svg") no-repeat;
   background-position: 110% 110%;
   width: 26px;
   height: 26px;
