@@ -4,13 +4,13 @@
   padding: 0 20px;
   background-color: #eaeaea;
   z-index: -6;
+}
 
-  @media (min-width: $width-tablet) {
-    padding: 0 30px;
-  }
-
+.example {
   @media (min-width: $width-desktop) {
-    padding: 0 110px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -27,8 +27,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 76px;
     padding: 0 110px;
+    position: absolute;
+    top: -150px;
   }
 }
 
@@ -39,6 +40,7 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 55px;
+    @include index-main-text;
   }
 
   @media (min-width: $width-desktop) {
@@ -56,7 +58,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0 110px;
+    padding: 70px 0 75px 110px;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
   }
 }
 
@@ -91,14 +95,23 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 8px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .data__info {
   color: $text-color;
   font-family: $main-font;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 100%;
   margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+  }
 }
 
 .price {
@@ -123,6 +136,15 @@
   }
 }
 
+.price__value {
+  display: inline;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+}
+
 .price__info {
   display: inline;
 
@@ -131,11 +153,20 @@
   }
 }
 
-.price__value {
-  display: inline;
-  margin: 0;
-
+.example__image {
   @media (min-width: $width-tablet) {
-    display: block;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 70px 110px 85px 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__image-wrapper {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: -120px;
   }
 }

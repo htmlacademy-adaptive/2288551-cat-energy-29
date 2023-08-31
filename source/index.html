@@ -11,30 +11,31 @@
 
 <body class="page-container">
   <header class="main-header">
-      <a href="#">
-        <picture class="main-header__logo">
-          <img class="main-header__logo_mobile" src="img/icons/logo-mobile.svg" width="33" height="38"
-            alt="логотип Кэт энерджи">
-          <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-        </picture>
-      </a>
-      <nav class="main-header__nav">
-        <input class="toggle__input" id="toggle-button" type="checkbox" />
-        <label class="toggle__label" for="toggle-button">
-          <span class="toggle__line"></span>
-        </label>
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current main-nav__link--current-light main-nav__link--color_light" href="#">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--color_light" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--color_light" href="form.html">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <a href="#">
+      <picture class="main-header__logo">
+        <img class="main-header__logo_mobile" src="img/icons/logo-mobile.svg" width="33" height="38"
+          alt="логотип Кэт энерджи">
+        <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      </picture>
+    </a>
+    <nav class="main-header__nav">
+      <input class="toggle__input" id="toggle-button" type="checkbox" />
+      <label class="toggle__label" for="toggle-button">
+        <span class="toggle__line"></span>
+      </label>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current main-nav__link--current-light main-nav__link--color_light"
+            href="#">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--color_light" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--color_light" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main-index-container">
     <section class="intro">
@@ -43,36 +44,41 @@
           питание для котов</h1>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
       </div>
-      <img class="intro__img" src="img/desktop-img/index-can.png" width="280" height="270" alt="Кэт энерджи курица">
+      <picture class="intro__img">
+        <!-- <img media="(min-width: 768px)" src="img/tablet-img/index-can-tablet.png" width="709"
+          height="609"> -->
+        <img src="img/desktop-img/index-can.png" width="280" height="270"
+          alt="Кэт энерджи курица">
+      </picture>
       <a class="intro__link" href="form.html">подобрать программу</a>
     </section>
     <section class="tariff">
       <ul class="tariff-list">
         <li class="tariff-list__item tariff-card">
+          <img class="tariff-card__img tariff-card__img--slim" src="img/icons/cat-slim.svg" width="36" height="50"
+            alt="силует стройной кошки">
           <div class="tariff-card__title-wrapper">
-            <img class="tariff-card__img tariff-card__img--slim" src="img/icons/cat-slim.svg" width="36" height="50"
-              alt="силует стройной кошки">
             <h2 class="tariff-card__title">похудение</h2>
+            <p class="tariff-card__description">Ваш кот весит больше собаки и почти утратил способность
+              лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+              вашему питомцу сбросить лишний вес.</p>
+            <a class="tariff-card__link" href="#">
+              каталог slim
+            </a>
           </div>
-          <p class="tariff-card__description">Ваш кот весит больше собаки и почти утратил способность
-            лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-            вашему питомцу сбросить лишний вес.</p>
-          <a class="tariff-card__link" href="#">
-            каталог slim
-          </a>
         </li>
         <li class="tariff-list__item tariff-card">
+          <img class="tariff-card__img tariff-card__img--pro" src="img/icons/cat-pro.svg" width="67" height="28"
+            alt="силует тигра">
           <div class="tariff-card__title-wrapper">
-            <img class="tariff-card__img tariff-card__img--pro" src="img/icons/cat-pro.svg" width="67" height="28"
-              alt="силует тигра">
             <h2 class="tariff-card__title">набор массы</h2>
+            <p class="tariff-card__description">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить
+              необходимые мышцы!</p>
+            <a class="tariff-card__link" href="#">
+              каталог pro
+            </a>
           </div>
-          <p class="tariff-card__description">Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить
-            необходимые мышцы!</p>
-          <a class="tariff-card__link" href="#">
-            каталог pro
-          </a>
         </li>
       </ul>
     </section>
@@ -123,7 +129,7 @@
         </div>
       </div>
       <div class="example__image">
-        <picture>
+        <picture class="example__image-wrapper">
           <img src="img/mobile-img/viewport-mobile-before@1x.png" width="280" height="256" alt="кот до еды">
           <img src="img/mobile-img/viewport-mobile-after@1x.png" width="280" height="256" alt="кот после еды">
         </picture>
@@ -136,9 +142,9 @@
           к сотрудничеству
           дилеров!</h2>
         <address class="contact__address">
-          ул. Большая
+          ул. Большая<br>
           Конюшенная, д. 19/8
-          Санкт-Петербург
+          <span class="contact__city">Санкт-Петербург</span>
         </address>
       </div>
       <img class="contact__map" src="img/mobile-img/map-mobile.png" width="320" height="362" alt="карта">
