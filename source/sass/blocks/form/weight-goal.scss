@@ -8,12 +8,15 @@
 
   @media (min-width: $width-tablet) {
     border: 1px solid #d9d9d9;
-    padding: 23px 27px 27px;
-    margin: 0 68px 65px 70px;
+    padding: 23px 27px 8px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 25px 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 28px 25px 8px;
     margin: 0;
   }
 }
@@ -31,9 +34,9 @@
 .radio {
   display: flex;
   gap: 15px;
+  margin-bottom: 19px;
   position: relative;
   align-items: center;
-  margin-bottom: 13px;
   cursor: pointer;
 
   &:disabled {
@@ -69,9 +72,15 @@
 
 .radio:hover .radio__title {
   color: $subtitle-color;
+  transition: 0.2s;
 }
 
-.radio .radio__input:checked + .radio__button::before {
+.radio:hover .radio__button {
+  border: 1px solid #bababa;
+  transition: 0.2s;
+}
+
+.radio .radio__input:checked+.radio__button::before {
   content: "";
   position: absolute;
   top: 50%;

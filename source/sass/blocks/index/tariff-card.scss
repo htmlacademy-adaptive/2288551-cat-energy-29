@@ -132,6 +132,10 @@
   text-transform: uppercase;
   margin-top: 19px;
 
+  &:active {
+    opacity: 0.3;
+  }
+  
   @media (min-width: $width-tablet) {
     margin: 0;
     font-size: 20px;

@@ -27,7 +27,19 @@
   @include form-main-text;
   width: 100%;
   padding: 14px;
-  border: 1px solid #e7e7e7;
+  appearance: none;
+  margin: 0;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  transition: 0.2s;
+
+  &:hover {
+    outline: $border;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
 
   @media (min-width: $width-tablet) {
     padding: 11px 20px;

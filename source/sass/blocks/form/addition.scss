@@ -1,8 +1,8 @@
 .addition {
-  margin-bottom: 21px;
+  margin-bottom: 34px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $width-desktop) {
@@ -26,6 +26,10 @@
   @include form-main-text;
   display: flex;
   margin-bottom: 13px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $width-tablet) {
     margin-bottom: 32px;
@@ -71,11 +75,15 @@
   color: $subtitle-color;
 }
 
+.checkbox__label:hover .checkbox__button {
+  border: 1px solid #bababa;
+}
+
 .checkbox__label .checkbox__input:checked + .checkbox__button::before {
   content: "";
   position: absolute;
   background: url("../img/icons/checkmark.svg") no-repeat;
-  background-position: 110% 110%;
+  margin: 11px 8px 10px;
   width: 26px;
   height: 26px;
   flex-shrink: 0;

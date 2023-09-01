@@ -1,3 +1,9 @@
+.form-set {
+  @media (min-width: $width-desktop) {
+    position: relative;
+  }
+}
+
 .form-set__about-cat,
 .form-set__about-owner,
 .form-set__review,
@@ -6,17 +12,14 @@
   padding: 0 20px;
 
   @media (min-width: $width-tablet) {
-    padding: 0 68px 0 70px;
-  }
-
-  @media (min-width: $width-desktop) {
     padding: 0;
   }
 }
 
 .form-set__notification {
-  display: block;
-  margin: 0 0 32px 84px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
   color: $title-color;
   font-family: $main-font;
   font-size: 14px;
@@ -31,7 +34,7 @@
 
 .form-set__button {
   display: block;
-  margin: 0 20px 21px;
+  margin: 0 auto 21px;
 
   @media (min-width: $width-tablet) {
     display: inline-block;
@@ -46,9 +49,16 @@
 }
 
 .form-set__about-cat {
+  margin-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 72px;
+  }
+
   @media (min-width: $width-desktop) {
     display: inline-block;
     margin-right: 80px;
+    margin-bottom: 70px;
   }
 }
 

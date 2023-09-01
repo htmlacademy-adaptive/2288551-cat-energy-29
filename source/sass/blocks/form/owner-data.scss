@@ -1,8 +1,8 @@
 .owner-data {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $width-desktop) {
@@ -16,6 +16,13 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 76px;
+  }
+}
+
+.owner-data__wrapper {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -42,12 +49,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    display: inline-block;
     margin-bottom: 0;
-
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
+    white-space: nowrap;
   }
 }
 
@@ -56,23 +59,32 @@
   appearance: none;
   margin: 0;
   border: none;
-  outline: $border;
+  outline: 1px solid #e7e7e7;
   padding: 14px 23px 13px 15px;
   width: 100%;
+  transition: 0.2s;
+
+  &:hover {
+    outline: $border;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
 
   @media (min-width: $width-tablet) {
     margin-left: 13px;
   }
 }
 
-.email__field {
-  @media (min-width: $width-desktop) {
-    width: 490px;
+  .email__field {
+    @media (min-width: $width-desktop) {
+      width: 490px;
+    }
   }
-}
 
-.telephone__field {
-  @media (min-width: $width-desktop) {
-    width: 470px;
+  .telephone__field {
+    @media (min-width: $width-desktop) {
+      width: 470px;
+    }
   }
-}

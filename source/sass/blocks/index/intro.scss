@@ -98,6 +98,16 @@
   text-transform: uppercase;
   line-height: 20px;
   background-color: $main-page-color;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $width-tablet) {
     position: absolute;
