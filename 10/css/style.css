@@ -239,12 +239,13 @@ a {
 }
 
 .main-nav__link {
+  display: block;
+  padding: 22px 0 24px 0;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 20px 20px;
 }
 @media (min-width: 768px) {
   .main-nav__link {
@@ -366,7 +367,6 @@ a {
   .main-nav__item {
     display: block;
     text-align: center;
-    padding: 22px 0 24px 0;
     border-bottom: 1px solid #e6e6e6;
   }
   .main-nav__item:first-child {
