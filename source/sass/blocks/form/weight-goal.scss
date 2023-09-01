@@ -1,0 +1,93 @@
+.weight-goal {
+  padding: 22px 0 6px 0;
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $width-tablet) {
+    border: 1px solid #d9d9d9;
+    padding: 23px 27px 8px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 28px 25px 8px;
+    margin: 0;
+  }
+}
+
+.weight-goal__item-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+// stylization of radio buttons (start)
+
+.radio {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 19px;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    gap: 20px;
+  }
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.radio__button {
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: $border;
+  border-radius: 50%;
+  outline: none;
+}
+
+.radio__title {
+  @include form-main-text;
+}
+
+.radio:hover .radio__title {
+  color: $subtitle-color;
+  transition: 0.2s;
+}
+
+.radio:hover .radio__button {
+  border: 1px solid #bababa;
+  transition: 0.2s;
+}
+
+.radio .radio__input:checked+.radio__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $main-page-color;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}

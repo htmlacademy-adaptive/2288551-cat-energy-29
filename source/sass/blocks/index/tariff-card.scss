@@ -1,0 +1,153 @@
+.tariff-card__title {
+  @include tariff-title;
+  margin: 9px 0 29px 70px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.tariff-card {
+  background-color: $dark-page-color;
+  padding: 24px 30px 18px 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $width-tablet) {
+    padding: 77px 63px 57px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+    padding: 77px 61px 59px 52px;
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: $main-page-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    @media (min-width: $width-tablet) {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      right: 93px;
+      top: 92px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+  }
+}
+
+.tariff-card__img {
+  position: absolute;
+
+  &--slim {
+    top: 21px;
+    left: 27px;
+  }
+
+  &--pro {
+    top: 35px;
+    left: 13px;
+  }
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+
+    &--slim {
+      top: 81px;
+      right: 93px;
+      left: auto;
+    }
+
+    &--pro {
+      top: 135px;
+      right: 29px;
+      left: auto;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+
+    &--slim {
+      top: 41px;
+      right: auto;
+      left: 67px;
+    }
+
+    &--pro {
+      top: 67px;
+      right: auto;
+      left: 33px;
+    }
+  }
+}
+
+.tariff-card__description {
+  @include index-main-text;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    width: 340px;
+    border: none;
+    padding: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 27px;
+  }
+}
+
+.tariff-card__link {
+  display: block;
+  position: relative;
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 19px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  &::after {
+    content: url("../img/icons/arrow.svg");
+    position: absolute;
+    margin-left: 15px;
+
+    @media (min-width: $width-tablet) {
+      margin-left: 25px;
+    }
+  }
+}

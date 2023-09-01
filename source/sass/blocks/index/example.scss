@@ -1,0 +1,245 @@
+.example__wrapper,
+.example__title,
+.example__image {
+  padding: 0 20px;
+  background-color: #eaeaea;
+
+}
+
+.example {
+  @media (min-width: $width-desktop) {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.example__title {
+  @include index-second-title;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 60px;
+    padding: 0 30px;
+    background-color: $light-page-color;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px;
+    position: absolute;
+    top: -150px;
+  }
+}
+
+.example__description {
+  @include index-main-text;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 55px;
+
+    @include index-main-text;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__wrapper {
+  padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 30px;
+    margin-bottom: 100px;
+    background-color: $light-page-color;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 70px 0 75px 110px;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
+
+  }
+}
+
+.data-wrapper {
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.data {
+  margin: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 124px;
+
+  &:first-of-type {
+    margin-right: 25px;
+
+    @media (min-width: $width-tablet) {
+      margin-right: 75px;
+      width: 162px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.data--one {
+  position: relative;
+
+  &::before {
+    content: url("../img/mobile-img/border-data-one.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $width-tablet) {
+      left: 0;
+      top: -15px;
+      content: url("../img/tablet-img/border-data-one.svg");
+    }
+  }
+}
+
+.data--two {
+  position: relative;
+
+  &::before {
+    content: url("../img/mobile-img/border-data-two.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $width-tablet) {
+      left: 0;
+      top: -15px;
+      content: url("../img/tablet-img/border-data-two.svg");
+    }
+  }
+}
+
+.data--two .data__value {
+  @media (min-width: $width-tablet) {
+    padding-left: 30px;
+  }
+}
+
+.data__value {
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+    white-space: nowrap;
+  }
+}
+
+.data__info {
+  color: $text-color;
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  width: 60px;
+  margin-left: 30px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+    width: 125px;
+    margin-left: 20px;
+  }
+}
+
+.price {
+  margin: 0;
+  text-align: center;
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    right: 0;
+    margin-top: -60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+.price__value {
+  display: inline;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+  }
+}
+
+.price__info {
+  display: inline;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    margin-bottom: 9px;
+    position: absolute;
+    right: 0;
+    margin-top: -29px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+    position: relative;
+    margin-right: 63px;
+    margin-bottom: 0;
+  }
+}
+
+.example__image {
+  @media (min-width: $width-tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 70px 110px 85px 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__image-wrapper {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: -120px;
+  }
+}

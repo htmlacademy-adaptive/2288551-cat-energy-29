@@ -1,0 +1,21 @@
+.tariff {
+  padding: 0 20px 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 30px 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px 71px;
+  }
+}
+
+.tariff-list {
+  @include reset-list;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+}

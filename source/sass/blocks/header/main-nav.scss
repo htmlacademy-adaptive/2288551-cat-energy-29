@@ -1,0 +1,99 @@
+.main-nav {
+  z-index: 6;
+
+  @include reset-list;
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    margin-left: 133px;
+    padding: 0;
+    display: flex;
+    white-space: nowrap;
+    gap: 32px;
+    width: 475px;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  @include reset-list;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    border-top: none;
+    padding-bottom: 25px;
+
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 22px 0 24px 0;
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    display: inline;
+    padding: 0;
+    padding-bottom: 8px;
+    font-size: 18px;
+    line-height: 24px;
+
+    &--current {
+      border-bottom: 2px solid $main-page-color;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 20px;
+
+    &--current-light {
+      border-bottom: 2px solid $light-page-color;
+    }
+  }
+
+  &--color_light {
+    @media (min-width: $width-desktop) {
+      color: $light-page-color;
+    }
+  }
+}
+
+.toggle__input {
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,52 @@
+.form-field__caption,
+.form-field__field {
+  @include form-main-text;
+}
+
+.form-field {
+  display: flex;
+  min-width: 280px;
+  margin-bottom: 14px;
+
+  @media (min-width: $width-tablet) {
+    min-width: 628px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
+}
+
+.form-field__caption {
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.form-field__field {
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  padding: 14px 15px 13px;
+  outline: 1px solid #e7e7e7;
+  transition: 0.2s;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $width-tablet) {
+    padding: 11px 20px;
+  }
+
+  &:hover {
+    outline: $border;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
+}

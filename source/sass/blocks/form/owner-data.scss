@@ -1,0 +1,90 @@
+.owner-data {
+  margin-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.owner-data__title {
+  @include form-title;
+  margin-bottom: 35px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 76px;
+  }
+}
+
+.owner-data__wrapper {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.email__caption,
+.telephone__caption,
+.email__field,
+.telephone__field {
+  @include form-main-text;
+}
+
+.email__caption,
+.telephone__caption {
+  white-space: nowrap;
+}
+
+.owner-data__item {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 14px;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+}
+
+.email__field,
+.telephone__field {
+  appearance: none;
+  margin: 0;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  padding: 14px 23px 13px 15px;
+  width: 100%;
+  transition: 0.2s;
+
+  &:hover {
+    outline: $border;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-left: 13px;
+  }
+}
+
+  .email__field {
+    @media (min-width: $width-desktop) {
+      width: 490px;
+    }
+  }
+
+  .telephone__field {
+    @media (min-width: $width-desktop) {
+      width: 470px;
+    }
+  }

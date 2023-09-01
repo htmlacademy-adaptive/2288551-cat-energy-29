@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Elvira Fatin](https://up.htmlacademy.ru/adaptive/29/user/2288551).
-* Наставник: [Максим Миронов](https://htmlacademy.ru/profile/id1336881).
+* Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353).
 
 ---
 

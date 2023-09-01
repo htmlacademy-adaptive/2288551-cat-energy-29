@@ -1,0 +1,50 @@
+.form-container__intro {
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 68px 0 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px;
+  }
+}
+
+.form {
+  @media (min-width: $width-tablet) {
+    padding: 0 68px 0 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px;
+  }
+}
+
+.form-container__title {
+  @include first-title;
+  margin-bottom: 37px;
+  color: $title-color;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.form-container__guide {
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
