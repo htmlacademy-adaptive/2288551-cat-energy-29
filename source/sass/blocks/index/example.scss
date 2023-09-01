@@ -3,7 +3,7 @@
 .example__image {
   padding: 0 20px;
   background-color: #eaeaea;
-  z-index: -6;
+
 }
 
 .example {
@@ -62,12 +62,12 @@
     padding: 70px 0 75px 110px;
     margin-bottom: 0;
     background-color: #f2f2f2;
+
   }
 }
 
 .data-wrapper {
   text-align: center;
-  padding: 20px 0;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -79,17 +79,19 @@
   margin: 0;
   margin-bottom: 20px;
   display: inline-block;
-  text-align: center;
   width: 124px;
 
   &:first-of-type {
-    margin-right: 32px;
-    margin-right: 95px;
+    margin-right: 25px;
 
     @media (min-width: $width-tablet) {
-      margin-right: 100px;
+      margin-right: 75px;
       width: 162px;
     }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 55px;
   }
 }
 
@@ -101,6 +103,7 @@
     position: absolute;
     left: 0;
     top: 0;
+
     @media (min-width: $width-tablet) {
       left: 0;
       top: -15px;
@@ -139,6 +142,7 @@
   line-height: 24px;
   margin-bottom: 8px;
   margin-top: 10px;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     margin-top: 0;
@@ -157,6 +161,7 @@
   margin: 0;
   width: 60px;
   margin-left: 30px;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     font-size: 14px;
@@ -177,13 +182,15 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     text-align: right;
-    display: inline-block;
-    position: absolute;
-    right: 30px;
+    position: relative;
+    right: 0;
+    margin-top: -60px;
   }
 
   @media (min-width: $width-desktop) {
-    right: 110px;
+    left: 0;
+    margin-top: 0;
+    text-align: left;
   }
 }
 
@@ -194,6 +201,10 @@
   @media (min-width: $width-tablet) {
     display: block;
   }
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+  }
 }
 
 .price__info {
@@ -201,6 +212,17 @@
 
   @media (min-width: $width-tablet) {
     display: block;
+    margin-bottom: 9px;
+    position: absolute;
+    right: 0;
+    margin-top: -29px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+    position: relative;
+    margin-right: 63px;
+    margin-bottom: 0;
   }
 }
 
