@@ -1,0 +1,50 @@
+.title {
+  @include form-title;
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    gap: 40px;
+  }
+
+  &::before {
+    @media (min-width: $width-tablet) {
+      content: "";
+      border-bottom: 2px solid $main-page-color;
+      height: 18px;
+      width: 30px;
+      margin-left: -70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 70px;
+      margin-left: -110px;
+    }
+  }
+
+  &::after {
+    content: "";
+    border-bottom: 2px solid $main-page-color;
+    height: 18px;
+    flex-grow: 1;
+    margin-right: -20px;
+
+    @media (min-width: $width-tablet) {
+      right: 0;
+      margin-right: -70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      left: 0;
+      margin-right: -110px;
+    }
+  }
+}
+
+.title__text {
+  max-width: 187px;
+
+  @media (min-width: $width-tablet) {
+    max-width: max-content;
+  }
+}

@@ -10,8 +10,7 @@
   }
 }
 
-.comment__title {
-  @include form-title;
+.comment__wrapper {
   margin-bottom: 38px;
 
   @media (min-width: $width-tablet) {

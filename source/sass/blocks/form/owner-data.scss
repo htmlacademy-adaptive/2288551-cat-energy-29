@@ -10,8 +10,7 @@
   }
 }
 
-.owner-data__title {
-  @include form-title;
+.owner-data__wrapper {
   margin-bottom: 35px;
 
   @media (min-width: $width-tablet) {
@@ -19,7 +18,7 @@
   }
 }
 
-.owner-data__wrapper {
+.owner-data__wrapper-item {
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: space-between;
@@ -85,14 +84,14 @@
   }
 }
 
-  .email__field {
-    @media (min-width: $width-desktop) {
-      width: 490px;
-    }
+.email__field {
+  @media (min-width: $width-desktop) {
+    width: 490px;
   }
+}
 
-  .telephone__field {
-    @media (min-width: $width-desktop) {
-      width: 470px;
-    }
+.telephone__field {
+  @media (min-width: $width-desktop) {
+    width: 470px;
   }
+}

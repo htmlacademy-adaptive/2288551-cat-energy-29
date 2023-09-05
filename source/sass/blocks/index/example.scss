@@ -86,52 +86,15 @@
 
     @media (min-width: $width-tablet) {
       margin-right: 75px;
-      width: 162px;
     }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 162px;
   }
 
   @media (min-width: $width-desktop) {
     margin-bottom: 55px;
-  }
-}
-
-.data--one {
-  position: relative;
-
-  &::before {
-    content: url("../img/mobile-img/border-data-one.svg");
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    @media (min-width: $width-tablet) {
-      left: 0;
-      top: -15px;
-      content: url("../img/tablet-img/border-data-one.svg");
-    }
-  }
-}
-
-.data--two {
-  position: relative;
-
-  &::before {
-    content: url("../img/mobile-img/border-data-two.svg");
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    @media (min-width: $width-tablet) {
-      left: 0;
-      top: -15px;
-      content: url("../img/tablet-img/border-data-two.svg");
-    }
-  }
-}
-
-.data--two .data__value {
-  @media (min-width: $width-tablet) {
-    padding-left: 30px;
   }
 }
 
@@ -140,16 +103,20 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 8px;
-  margin-top: 10px;
   text-align: center;
+  padding: 14px 0 7px 0;
+  border: $border;
+  border-radius: 5px;
+  width: 124px;
+  min-height: 56px;;
 
   @media (min-width: $width-tablet) {
-    margin-top: 0;
-    margin-bottom: 11px;
     font-size: 30px;
     line-height: 37px;
     white-space: nowrap;
+    padding: 15px 0 11px 0;
+    width: 162px;
+    min-height: 72px;
   }
 }
 
@@ -158,15 +125,22 @@
   font-family: $main-font;
   font-size: 12px;
   line-height: 100%;
-  margin: 0;
-  width: 60px;
-  margin-left: 30px;
-  text-align: center;
+  width: 70px;
+  margin-left: 0;
+  margin: 0 auto;
+  background-color: #eaeaea;
+  margin-top: -10px;
 
   @media (min-width: $width-tablet) {
     font-size: 14px;
-    width: 125px;
-    margin-left: 20px;
+    width: max-content;
+    background-color: #ffffff;
+    padding: 0 9px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: #f2f2f2;
   }
 }
 

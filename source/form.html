@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" sizes="32x32" href="favicon.ico">
+  <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="mainfest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
   <title>Кэт энерджи: подбор программы</title>
 </head>
@@ -83,8 +86,10 @@
           </div>
         </fieldset>
         <fieldset class="form-set__about-owner owner-data">
-          <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
-          <div class="owner-data__wrapper">
+          <p class="owner-data__wrapper title">
+            <span class="title__text">Контактные данные (владельца кота)</span>
+          </p>
+          <div class="owner-data__wrapper-item">
             <label class="owner-data__item email">
               <span class="email__caption">E-mail:<sup>*</sup></span>
               <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -97,14 +102,18 @@
         </fieldset>
         <fieldset class="form-set__review comment">
           <label>
-            <h2 class="comment__title">Комментарий</h2>
-            <textarea class="comment__field" name="comment" rows="7"
-              cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <p class="comment__wrapper title">
+              <span class="title__text">Комментарий</span>
+            </p>
+            <textarea class="comment__field" name="comment" rows="7" cols="30"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form-set__extra addition">
           <legend class="addition__legend">
-            <h2 class="addition__title">Дополнительно</h2>
+            <div class="title">
+              <span class="title__text">Дополнительно</span>
+            </div>
           </legend>
           <div class="addition__item checkbox">
             <label class="checkbox__label">

@@ -40,7 +40,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 37px 153px;
+    justify-content: space-between;
+    row-gap: 37px;
   }
 
   @media (min-width: $width-desktop) {
