@@ -3,7 +3,6 @@
 .example__image {
   padding: 0 20px;
   background-color: #eaeaea;
-
 }
 
 .example {
@@ -63,7 +62,6 @@
     padding: 70px 0 75px 110px;
     margin-bottom: 0;
     background-color: #f2f2f2;
-
   }
 }
 
@@ -109,7 +107,7 @@
   border: $border;
   border-radius: 5px;
   width: 124px;
-  min-height: 56px;;
+  min-height: 56px;
 
   @media (min-width: $width-tablet) {
     font-size: 30px;
@@ -127,7 +125,6 @@
   font-size: 12px;
   line-height: 100%;
   width: 70px;
-  margin-left: 0;
   margin: 0 auto;
   background-color: #eaeaea;
   margin-top: -10px;

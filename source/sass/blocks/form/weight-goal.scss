@@ -63,6 +63,7 @@
   border: $border;
   border-radius: 50%;
   outline: none;
+
   @media (min-width: $width-tablet) {
     width: 40px;
     height: 40px;
@@ -83,7 +84,7 @@
   transition: 0.2s;
 }
 
-.radio .radio__input:checked+.radio__button::before {
+.radio .radio__input:checked + .radio__button::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -93,6 +94,7 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
+
   @media (min-width: $width-tablet) {
     width: 18px;
     height: 18px;
