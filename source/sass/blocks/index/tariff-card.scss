@@ -1,6 +1,7 @@
 .tariff-card__title {
   @include tariff-title;
   margin: 9px 0 29px 70px;
+  font-weight: 400;
 
   @media (min-width: $width-tablet) {
     margin: 0;

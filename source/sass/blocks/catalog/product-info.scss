@@ -15,12 +15,18 @@
 
 .product-info__parameter {
   text-align: left;
-  border-bottom: $border;
-  padding: 9px 0 6px;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: $border;
+    padding: 9px 0 6px;
+  }
 }
 
 .product-info__parameter_value {
   text-align: right;
-  border-bottom: $border;
-  padding: 9px 0 6px;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: $border;
+    padding: 9px 0 6px;
+  }
 }

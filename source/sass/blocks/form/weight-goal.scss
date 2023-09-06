@@ -33,7 +33,7 @@
 .radio {
   display: flex;
   gap: 15px;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   position: relative;
   align-items: center;
   cursor: pointer;
@@ -63,6 +63,10 @@
   border: $border;
   border-radius: 50%;
   outline: none;
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio__title {
@@ -89,4 +93,8 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }

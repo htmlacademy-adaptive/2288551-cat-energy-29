@@ -33,11 +33,8 @@
 }
 
 .catalog-card__image {
+  display: block;
   margin: auto;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 auto 34px;
-  }
 }
 
 .catalog-card__title {
