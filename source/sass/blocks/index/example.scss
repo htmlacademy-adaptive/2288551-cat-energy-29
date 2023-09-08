@@ -1,6 +1,6 @@
 .example__wrapper,
 .example__title,
-.example__image {
+.slider {
   padding: 0 20px;
   background-color: #eaeaea;
 }
@@ -10,6 +10,7 @@
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
   }
 }
 
@@ -54,7 +55,7 @@
 
   @media (min-width: $width-tablet) {
     padding: 0 30px;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
     background-color: $light-page-color;
   }
 
@@ -195,23 +196,5 @@
     position: relative;
     margin-right: 63px;
     margin-bottom: 0;
-  }
-}
-
-.example__image {
-  @media (min-width: $width-tablet) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding: 70px 110px 85px 0;
-    background-color: #f2f2f2;
-  }
-}
-
-.example__image-wrapper {
-  @media (min-width: $width-desktop) {
-    position: absolute;
-    top: -120px;
   }
 }

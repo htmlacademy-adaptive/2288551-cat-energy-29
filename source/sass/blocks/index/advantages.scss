@@ -56,6 +56,10 @@
   min-width: 280px;
   min-height: 60px;
 
+  // &--icon_first {
+	// 		background-image:  url("../../../img/icons/sprite.svg#leaf");
+	// 	}
+
   @media (min-width: $width-tablet) {
     flex-wrap: wrap;
     min-width: 0;
@@ -70,16 +74,11 @@
     min-width: 60px;
     height: 60px;
     margin-right: 20px;
+    z-index: -5;
 
     @media (min-width: $width-tablet) {
       width: 80px;
       height: 80px;
-    }
-  }
-
-  &--icon_fourth {
-    @media (min-width: $width-tablet) {
-      width: 242px;
     }
   }
 }
