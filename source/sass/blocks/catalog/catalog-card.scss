@@ -33,14 +33,12 @@
 }
 
 .catalog-card__image {
+  display: block;
   margin: auto;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 auto 34px;
-  }
 }
 
 .catalog-card__title {
+  display: block;
   color: $subtitle-color;
   font-family: $secondary-font;
   font-size: 16px;

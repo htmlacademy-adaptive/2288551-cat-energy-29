@@ -1,6 +1,7 @@
 .tariff-card__title {
   @include tariff-title;
   margin: 9px 0 29px 70px;
+  font-weight: 400;
 
   @media (min-width: $width-tablet) {
     margin: 0;
@@ -34,10 +35,13 @@
     content: "";
     display: inline-block;
     position: absolute;
-    background-color: $main-page-color;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    background-color: $main-page-color;
+
+    // не вставляется svg из спрайта
+    // background: url("../../../img/icons/sprite-decor.svg#cat-slim");
 
     @media (min-width: $width-tablet) {
       width: 200px;
@@ -57,51 +61,51 @@
   }
 }
 
-.tariff-card__img {
-  position: absolute;
+// .tariff-card__img {
+//   position: absolute;
 
-  &--slim {
-    top: 21px;
-    left: 27px;
-  }
+//   &--slim {
+//     top: 21px;
+//     left: 27px;
+//   }
 
-  &--pro {
-    top: 35px;
-    left: 13px;
-  }
+//   &--pro {
+//     top: 35px;
+//     left: 13px;
+//   }
 
-  @media (min-width: $width-tablet) {
-    position: absolute;
+//   @media (min-width: $width-tablet) {
+//     position: absolute;
 
-    &--slim {
-      top: 81px;
-      right: 93px;
-      left: auto;
-    }
+//     &--slim {
+//       top: 81px;
+//       right: 93px;
+//       left: auto;
+//     }
 
-    &--pro {
-      top: 135px;
-      right: 29px;
-      left: auto;
-    }
-  }
+//     &--pro {
+//       top: 135px;
+//       right: 29px;
+//       left: auto;
+//     }
+//   }
 
-  @media (min-width: $width-desktop) {
-    position: absolute;
+//   @media (min-width: $width-desktop) {
+//     position: absolute;
 
-    &--slim {
-      top: 41px;
-      right: auto;
-      left: 67px;
-    }
+//     &--slim {
+//       top: 41px;
+//       right: auto;
+//       left: 67px;
+//     }
 
-    &--pro {
-      top: 67px;
-      right: auto;
-      left: 33px;
-    }
-  }
-}
+//     &--pro {
+//       top: 67px;
+//       right: auto;
+//       left: 33px;
+//     }
+//   }
+// }
 
 .tariff-card__description {
   @include index-main-text;

@@ -21,23 +21,32 @@
 .main-header__logo {
   display: flex;
   align-items: center;
+  gap: 56px;
 
   @media (min-width: $width-tablet) {
-    top: 16px;
-    left: 103px;
+    gap: 13px;
   }
-}
 
-.main-header__logo_text {
-  margin: 0 56px;
+  @media (min-width: $width-desktop) {
+    gap: 14px;
+  }
 
-  @media (min-width: $width-tablet) {
-    margin: 0 13px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .main-header__nav {
+  @media (min-width: $width-tablet) {
+    padding-top: 14px;
+  }
+
   @media (min-width: $width-desktop) {
+    padding-top: 0;
     position: absolute;
     right: 110px;
   }

@@ -17,7 +17,6 @@
     top: 0;
     right: 0;
     padding: 28px 25px 8px;
-    margin: 0;
   }
 }
 
@@ -34,7 +33,7 @@
 .radio {
   display: flex;
   gap: 15px;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   position: relative;
   align-items: center;
   cursor: pointer;
@@ -64,6 +63,11 @@
   border: $border;
   border-radius: 50%;
   outline: none;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio__title {
@@ -80,7 +84,7 @@
   transition: 0.2s;
 }
 
-.radio .radio__input:checked+.radio__button::before {
+.radio .radio__input:checked + .radio__button::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -90,4 +94,9 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
+
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -12,14 +12,11 @@
 
 .addition__legend {
   margin-bottom: 34px;
+  width: 100%;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 57px;
   }
-}
-
-.addition__title {
-  @include form-title;
 }
 
 .addition__item {
