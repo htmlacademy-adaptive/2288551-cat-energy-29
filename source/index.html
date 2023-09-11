@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" sizes="32x32" href="favicon.ico">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="icon" sizes="16x16 32x32" href="favicon.ico">
   <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="mainfest" href="manifest.webmanifest">
@@ -62,7 +64,7 @@
     <section class="tariff">
       <ul class="tariff-list">
         <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+          <div class="tariff-card__wrapper">
             <h2 class="tariff-card__title">похудение</h2>
             <p class="tariff-card__description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -73,7 +75,7 @@
           </div>
         </li>
         <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+          <div class="tariff-card__wrapper">
             <h2 class="tariff-card__title">набор массы</h2>
             <p class="tariff-card__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -132,22 +134,24 @@
         </dl>
       </div>
       <div class="example__slider-container slider">
-        <div class="slider__wrapper">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
-            img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
-            <img src="img/mobile-img/viewport-mobile-before@1x.png"
-              srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
-          </picture>
-        </div>
-        <div class="slider__button"></div>
-        <div class="slider__wrapper slider__wrapper--overlay">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
-            img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
-            <img src="img/mobile-img/viewport-mobile-after@1x.png"
-              srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
-          </picture>
+        <div id="slider" class="slider">
+          <div class="slider__before">
+            <picture>
+              <source class="slider__img" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
+              img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
+              <img class="slider__img" src="img/mobile-img/viewport-mobile-before@1x.png"
+                srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
+            </picture>
+            <div class="slider__resize"></div>
+          </div>
+          <div class="slider__after">
+            <picture>
+              <source class="slider__img" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
+              img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
+              <img class="slider__img" src="img/mobile-img/viewport-mobile-after@1x.png"
+                srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -224,8 +228,6 @@
       </a>
     </div>
   </footer>
-  <script defer src="js/map.js"></script>
-  <script defer src="js/slider.js"></script>
 </body>
 
 </html>

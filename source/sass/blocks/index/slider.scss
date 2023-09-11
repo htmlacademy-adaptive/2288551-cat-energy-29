@@ -1,8 +1,6 @@
 .slider {
-  display: flex;
   position: relative;
   height: 256px;
-  justify-content: center;
 
   @media (min-width: $width-tablet) {
     background-image: linear-gradient(transparent 0 151px, #eaeaea 151px 100%);
@@ -16,36 +14,80 @@
   }
 }
 
-.slider__wrapper {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-
-  @media (min-width: $width-tablet) {
-    top: -151px;
-  }
-
-  @media (min-width: $width-desktop) {
-    top: -135px;
-  }
+.slider {
+  width: 1000px;
+  height: 512px;
+  position: relative;
+  background-color: blanchedalmond;
 }
 
-.slider__button {
+.slider__before {
+  width: 500px;
+  height: 512px;
   position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: 5;
+  background-size: cover;
+  background: url("../img/viewport-mobile-before@1x.png") no-repeat center center fixed;
+  z-index: 4;
+}
+
+.slider__after {
+  width: 1000px;
+  height: 512px;
+  position: absolute;
+  background-size: cover;
+  background: url("../img/viewport-mobile-after@1x.png") no-repeat center center fixed;
+}
+
+.slider__resize {
+  width: 5px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #666666;
   cursor: ew-resize;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/mobile-img/thumb.svg");
 
-  @media (min-width: $width-tablet) {
-    top: 25%;
+  &::before {
+    content: ">";
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    top: 50%;
+    left: 5px;
   }
 
-  @media (min-width: $width-desktop) {
-    top: 30%;
+  &::after {
+    content: "<";
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    top: 50%;
+    right: 5px;
   }
 }
+
+
+// .slider__button {
+// 	left: 50%;
+// 	top: 0;
+// 	z-index: 10;
+// 	width: 4px;
+// 	height: 110%;
+//   border-radius: 2px;
+// 	background-color: #666666;
+// }
+
+// .slider__button::after {
+// 	content: "";
+// 	position: absolute;
+// 	left: 50%;
+// 	top: 50%;
+// 	border-radius: 100%;
+// 	width: 40px;
+// 	height: 40px;
+//   cursor: ew-resize;
+// 	background-image: url("../img/mobile-img/thumb.svg");
+// 	transform: translate(-50%, -50%);
+// }

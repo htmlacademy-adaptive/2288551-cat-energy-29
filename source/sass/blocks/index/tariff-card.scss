@@ -14,6 +14,11 @@
   }
 }
 
+.tariff-card__wrapper {
+  background: url("../img/icons/sprite-decor.svg#cat-slim");
+  z-index: 10;
+}
+
 .tariff-card {
   background-color: $dark-page-color;
   padding: 24px 30px 18px 20px;
