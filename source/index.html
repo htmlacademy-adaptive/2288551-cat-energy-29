@@ -8,7 +8,7 @@
   <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="mainfest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -49,6 +49,12 @@
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+          srcset="img/desktop-img/index-can@1x.webp 1x, img/desktop-img/index-can@2x.webp 2x" width="552" height="499">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/tablet-img/index-can-tablet@1x.webp 1x, img/tablet-img/index-can-tablet@2x.webp 2x" width="709" height="609">
+        <source type="image/webp" srcset="img/mobile-img/index-can-mobile@1x.webp 1x, img/mobile-img/index-can-mobile@2x.webp 2x"
+          width="280" height="270">
         <source media="(min-width: 1440px)"
           srcset="img/desktop-img/index-can@1x.png 1x, img/desktop-img/index-can@2x.png 2x" width="552" height="499">
         <source media="(min-width: 768px)"
@@ -62,7 +68,7 @@
     <section class="tariff">
       <ul class="tariff-list">
         <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+          <div class="tariff-card__wrapper tariff-card__wrapper--slim">
             <h2 class="tariff-card__title">похудение</h2>
             <p class="tariff-card__description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -73,7 +79,7 @@
           </div>
         </li>
         <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+          <div class="tariff-card__wrapper tariff-card__wrapper--pro">
             <h2 class="tariff-card__title">набор массы</h2>
             <p class="tariff-card__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -134,6 +140,10 @@
       <div class="example__slider-container slider">
         <div class="slider__before">
           <picture>
+            <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
+            img/tablet-img/viewport-tablet-before@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
+            img/mobile-img/viewport-mobile-before@2x.webp 2x"  width="280" height="256">
             <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
             img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
             <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
@@ -147,6 +157,10 @@
         </div>
         <div class="slider__after">
           <picture>
+            <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
+            img/tablet-img/viewport-tablet-after@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
+            img/mobile-img/viewport-mobile-after@2x.webp 2x"  width="280" height="256">
             <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
             img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
             <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"

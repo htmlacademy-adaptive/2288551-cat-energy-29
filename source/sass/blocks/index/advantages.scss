@@ -64,9 +64,34 @@
   align-items: center;
   min-width: 280px;
   min-height: 60px;
-  // &--icon_first {
-  // 		background-image:  url("../../../img/icons/sprite.svg#leaf");
-  // 	}
+
+  &--icon_first {
+    background-image: url("../img/icons-decor/sprite-decor.svg#leaf");
+    background-size: 40px 40px;
+    background-position: 20px 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--icon_second {
+    background-image: url("../img/icons-decor/sprite-decor.svg#powder");
+    background-size: 40px 40px;
+    background-position: 20px 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--icon_third {
+    background-image: url("../img/icons-decor/sprite-decor.svg#cutlery");
+    background-size: 40px 40px;
+    background-position: 20px 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--icon_fourth {
+    background-image: url("../img/icons-decor/sprite-decor.svg#clock");
+    background-size: 40px 40px;
+    background-position: 20px 60px;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $width-tablet) {
     flex-wrap: wrap;
