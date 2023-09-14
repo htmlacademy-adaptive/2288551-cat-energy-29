@@ -76,12 +76,20 @@ const svg = () => {
   .pipe(gulp.dest('build/img/icons'));
 }
 
-const stack = () => {
+const sprite1 = () => {
   return gulp.src('source/img/icons-decor/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: `sprite` }))
   .pipe(rename('sprite-decor.svg'))
   .pipe(gulp.dest('build/img/icons-decor'));
+}
+
+const sprite2 = () => {
+  return gulp.src('source/img/icons-social/*.svg')
+  .pipe(svgo())
+  .pipe(stacksvg({ output: `sprite` }))
+  .pipe(rename('sprite-social.svg'))
+  .pipe(gulp.dest('build/img/icons-social'));
 }
 
 // Copy
@@ -143,7 +151,8 @@ const build = gulp.series(
     html,
     scripts,
     svg,
-    stack,
+    sprite1,
+    sprite2,
     createWebp
   )
 );
@@ -159,7 +168,8 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    stack,
+    sprite1,
+    sprite2,
     createWebp
   ),
   gulp.series(

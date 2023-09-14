@@ -49,7 +49,11 @@
     font-size: 16px;
     line-height: 18px;
     width: 165px;
-    margin: 0 auto 82px;
+    margin: 0 auto 62px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto 72px;
   }
 }
 
@@ -80,5 +84,23 @@
 
   @media (min-width: $width-desktop) {
     width: 168px;
+  }
+}
+
+.show-more__svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 23px;
+  margin-top: 25px;
+
+  @media (min-width: $width-tablet) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 40px;
   }
 }

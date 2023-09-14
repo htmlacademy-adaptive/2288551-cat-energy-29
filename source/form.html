@@ -14,12 +14,13 @@
 
 <body class="page-container">
   <header class="main-header">
-    <a href="index.html">
+    <a class="main-header__logo" href="#">
       <picture>
-        <img class="main-header__logo_mobile" src="img/icons/logo-mobile.svg" width="33" height="38"
-          alt="логотип Кэт энерджи">
-        <img class="main-header__logo_text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+        <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg" width="60" height="50">
+        <img src="img/icons/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
       </picture>
+      <img src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-header__nav">
       <input class="toggle__input" id="toggle-button" type="checkbox" />
@@ -28,7 +29,8 @@
       </label>
       <ul class="main-nav">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">главная</a>
+          <a class="main-nav__link"
+            href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">каталог продукции</a>
@@ -92,11 +94,13 @@
           <div class="owner-data__wrapper-item">
             <label class="owner-data__item email">
               <span class="email__caption">E-mail:<sup>*</sup></span>
-              <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
             </label>
             <label class="owner-data__item telephone">
               <span class="telephone__caption">Телефон:<sup>*</sup></span>
-              <input class="telephone__field" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
+              <input class="telephone__field" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
+              pattern="\+?[0-9\s\-\(\)]+" required>
             </label>
           </div>
         </fieldset>
@@ -162,15 +166,24 @@
       </div>
       <div class="contact__map-wrapper contact__map-wrapper--nojs">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop-img/map@1x.webp 1x, img/desktop-img/map@2x.webp 2x"
+            width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-img/map@1x.webp 1x, img/tablet-img/map@2x.webp 2x"
+            width="768" height="400">
+          <source type="image/webp" srcset="img/mobile-img/map@1x.webp 1x, img/mobile-img/map@2x.webp 2x"
+            width="320" height="362">
           <source media="(min-width: 1440px)" srcset="img/desktop-img/map@1x.png 1x, img/desktop-img/map@2x.png 2x"
             width="1440" height="400">
           <source media="(min-width: 768px)" srcset="img/tablet-img/map@1x.png 1x, img/tablet-img/map@2x.png 2x"
             width="768" height="400">
-          <img class="contact__map-img" src="img/mobile-img/map@1x.png" srcset="img/mobile-img/map@2x.png 2x" width="320" height="362"
-            alt="карта">
+          <img class="contact__map-img" src="img/mobile-img/map@1x.png" srcset="img/mobile-img/map@2x.png 2x"
+            width="320" height="362" alt="карта">
         </picture>
         <a class="contact__map-pin" href="https://goo.gl/maps/DVYxUVKCaPf7gK7B9">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.webp 1x,
+          img/desktop-img/map-pin@2x.webp 2x" width="113" height="106">
+            <source type="image/webp" srcset="img/mobile-img/map-pin@1x.webp 1x, img/mobile-img/map-pin@2x.webp 2x" width="57" height="53">
             <source media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.png 1x,
           img/desktop-img/map-pin@2x.png 2x" width="113" height="106">
             <img src="img/mobile-img/map-pin@1x.png" srcset="img/mobile-img/map-pin@2x.png 2x" width="57" height="53"
@@ -191,21 +204,21 @@
         <li class="social-list__item">
           <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#vkontakte"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#youtube"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#telegram"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
             </svg>
           </a>
         </li>
@@ -215,7 +228,7 @@
       <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
       <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
         <svg width="27" height="34" aria-hidden="true" focusable="false">
-          <use xlink:href="img/icons/sprite-social.svg#htmlacademy-logo"></use>
+          <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
         </svg>
       </a>
     </div>

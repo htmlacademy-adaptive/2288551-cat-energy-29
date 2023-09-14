@@ -55,20 +55,25 @@
 
 .email__field,
 .telephone__field {
+  flex-grow: 1;
   appearance: none;
   margin: 0;
-  border: none;
-  outline: 1px solid #e7e7e7;
+  outline: none;
+  border: 1px solid #e7e7e7;
   padding: 14px 23px 13px 15px;
   width: 100%;
   transition: 0.2s;
 
   &:hover {
-    outline: $border;
+    border-color: #cdcdcd;
   }
 
   &:focus {
-    outline: 2px solid $text-color;
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline-color: #FF8282;
   }
 
   &::-webkit-input-placeholder {
@@ -77,6 +82,12 @@
 
   &::-moz-placeholder {
     color: $text-color;
+  }
+
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
   }
 
   @media (min-width: $width-tablet) {
@@ -94,4 +105,42 @@
   @media (min-width: $width-desktop) {
     width: 470px;
   }
+}
+
+.email {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    -webkit-mask-image: url("../img/icons-decor/sprite-decor.svg#email");
+    mask-image: url("../img/icons-decor/sprite-decor.svg#email");
+    background-color: #222;
+  }
+}
+
+.telephone {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    -webkit-mask-image: url("../img/icons-decor/sprite-decor.svg#phone");
+    mask-image: url("../img/icons-decor/sprite-decor.svg#phone");
+    background-color: #222;
+  }
+}
+
+.email:focus-within::before,
+.telephone:focus-within::before {
+  background-color: $main-page-color;
+
 }
