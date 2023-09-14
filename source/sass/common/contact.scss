@@ -66,6 +66,10 @@
 
 .contact__city {
   display: block;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 20px;
+  }
 }
 
 // map styles

@@ -102,6 +102,11 @@
 }
 
 .telephone__field {
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
   @media (min-width: $width-desktop) {
     width: 470px;
   }

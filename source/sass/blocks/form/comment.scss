@@ -24,6 +24,7 @@
 
 .comment__field {
   @include form-main-text;
+  resize: none;
   width: 100%;
   padding: 14px;
   appearance: none;
