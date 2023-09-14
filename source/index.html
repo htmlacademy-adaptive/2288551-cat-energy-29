@@ -52,9 +52,11 @@
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/desktop-img/index-can@1x.webp 1x, img/desktop-img/index-can@2x.webp 2x" width="552" height="499">
         <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/tablet-img/index-can-tablet@1x.webp 1x, img/tablet-img/index-can-tablet@2x.webp 2x" width="709" height="609">
-        <source type="image/webp" srcset="img/mobile-img/index-can-mobile@1x.webp 1x, img/mobile-img/index-can-mobile@2x.webp 2x"
-          width="280" height="270">
+          srcset="img/tablet-img/index-can-tablet@1x.webp 1x, img/tablet-img/index-can-tablet@2x.webp 2x" width="709"
+          height="609">
+        <source type="image/webp"
+          srcset="img/mobile-img/index-can-mobile@1x.webp 1x, img/mobile-img/index-can-mobile@2x.webp 2x" width="280"
+          height="270">
         <source media="(min-width: 1440px)"
           srcset="img/desktop-img/index-can@1x.png 1x, img/desktop-img/index-can@2x.png 2x" width="552" height="499">
         <source media="(min-width: 768px)"
@@ -138,34 +140,37 @@
         </dl>
       </div>
       <div class="example__slider-container slider">
-        <div class="slider__before">
-          <picture>
-            <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
+        <div class="slider__wrapper">
+          <div class="slider__before">
+            <picture>
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
             img/tablet-img/viewport-tablet-before@2x.webp 2x" width="560" height="512">
-            <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
-            img/mobile-img/viewport-mobile-before@2x.webp 2x"  width="280" height="256">
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
+              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
+            img/mobile-img/viewport-mobile-before@2x.webp 2x" width="280" height="256">
+              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
             img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
-            <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
-              srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
-          </picture>
-        </div>
-        <div class="slider__resize">
-          <svg class="slider__resize-arrow" width="40" height="40">
-            <use xlink:href="img/icons/slider-arrows.svg"></use>
-          </svg>
-        </div>
-        <div class="slider__after">
-          <picture>
-            <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
+              <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
+                srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
+            </picture>
+          </div>
+          <div class="slider__resize-wrapper">
+            <div class="slider__resize"></div>
+            <svg class="slider__resize-arrows" width="40" height="40" aria-hidden="true">
+              <use xlink:href="img/icons/slider-arrows.svg"></use>
+            </svg>
+          </div>
+          <div class="slider__after">
+            <picture>
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
             img/tablet-img/viewport-tablet-after@2x.webp 2x" width="560" height="512">
-            <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
-            img/mobile-img/viewport-mobile-after@2x.webp 2x"  width="280" height="256">
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
+              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
+            img/mobile-img/viewport-mobile-after@2x.webp 2x" width="280" height="256">
+              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
             img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
-            <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"
-              srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
-          </picture>
+              <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"
+                srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -183,12 +188,12 @@
       </div>
       <div class="contact__map-wrapper contact__map-wrapper--nojs">
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop-img/map@1x.webp 1x, img/desktop-img/map@2x.webp 2x"
-            width="1440" height="400">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-img/map@1x.webp 1x, img/tablet-img/map@2x.webp 2x"
-            width="768" height="400">
-          <source type="image/webp" srcset="img/mobile-img/map@1x.webp 1x, img/mobile-img/map@2x.webp 2x"
-            width="320" height="362">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/desktop-img/map@1x.webp 1x, img/desktop-img/map@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/tablet-img/map@1x.webp 1x, img/tablet-img/map@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="img/mobile-img/map@1x.webp 1x, img/mobile-img/map@2x.webp 2x" width="320"
+            height="362">
           <source media="(min-width: 1440px)" srcset="img/desktop-img/map@1x.png 1x, img/desktop-img/map@2x.png 2x"
             width="1440" height="400">
           <source media="(min-width: 768px)" srcset="img/tablet-img/map@1x.png 1x, img/tablet-img/map@2x.png 2x"
@@ -200,7 +205,8 @@
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.webp 1x,
           img/desktop-img/map-pin@2x.webp 2x" width="113" height="106">
-            <source type="image/webp" srcset="img/mobile-img/map-pin@1x.webp 1x, img/mobile-img/map-pin@2x.webp 2x" width="57" height="53">
+            <source type="image/webp" srcset="img/mobile-img/map-pin@1x.webp 1x, img/mobile-img/map-pin@2x.webp 2x"
+              width="57" height="53">
             <source media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.png 1x,
           img/desktop-img/map-pin@2x.png 2x" width="113" height="106">
             <img src="img/mobile-img/map-pin@1x.png" srcset="img/mobile-img/map-pin@2x.png 2x" width="57" height="53"
