@@ -60,7 +60,7 @@
   &--slim {
     &::after {
       content: "";
-      background-image: url(../img/icons-decor/sprite-decor.svg#cat-slim);
+      background-image: url("../img/icons-decor/sprite-decor.svg#cat-slim");
       display: block;
       position: absolute;
       left: 27px;
@@ -89,7 +89,7 @@
   &--pro {
     &::after {
       content: "";
-      background-image: url(../img/icons-decor/sprite-decor.svg#cat-pro);
+      background-image: url("../img/icons-decor/sprite-decor.svg#cat-pro");
       display: block;
       position: absolute;
       left: 13px;

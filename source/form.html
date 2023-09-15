@@ -23,7 +23,7 @@
       <img src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-header__nav">
-      <input class="toggle__input" id="toggle-button" type="checkbox" />
+      <input class="toggle__input" id="toggle-button" type="checkbox" checked/>
       <label class="toggle__label" for="toggle-button">
         <span class="toggle__line"></span>
       </label>
@@ -96,11 +96,13 @@
               <span class="email__caption">E-mail:<sup>*</sup></span>
               <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com"
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+              <div class="email__icon"></div>
             </label>
             <label class="owner-data__item telephone">
               <span class="telephone__caption">Телефон:<sup>*</sup></span>
               <input class="telephone__field telephone__field--number" type="number" name="telephone" placeholder="8 (960) 900-60-90"
               pattern="\+?[0-9\s\-\(\)]+" required>
+              <div class="telephone__icon"></div>
             </label>
           </div>
         </fieldset>
@@ -233,6 +235,7 @@
       </a>
     </div>
   </footer>
+  <script defer src="js/main-header__nav.js"></script>
 </body>
 
 </html>
