@@ -40,14 +40,11 @@
     border-radius: 50%;
     background-color: $main-page-color;
 
-    // не вставляется svg из спрайта
-    // background: url("../../../img/icons/sprite-decor.svg#cat-slim");
-
     @media (min-width: $width-tablet) {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      right: 93px;
+      right: 63px;
       top: 92px;
     }
 
@@ -59,50 +56,79 @@
       right: auto;
     }
   }
+
+  &--slim {
+    &::after {
+      content: "";
+      background-image: url("../img/icons-decor/sprite-decor.svg#cat-slim");
+      display: block;
+      position: absolute;
+      left: 27px;
+      top: 21px;
+      width: 36px;
+      height: 50px;
+
+      @media (min-width: $width-tablet) {
+        left: auto;
+        right: 93px;
+        top: 81px;
+        width: 140px;
+        height: 192px;
+      }
+
+      @media (min-width: $width-desktop) {
+        right: auto;
+        left: 67px;
+        top: 41px;
+        width: 70px;
+        height: 97px;
+      }
+    }
+  }
+
+  &--pro {
+    &::after {
+      content: "";
+      background-image: url("../img/icons-decor/sprite-decor.svg#cat-pro");
+      display: block;
+      position: absolute;
+      left: 13px;
+      top: 35px;
+      width: 67px;
+      height: 28px;
+
+      @media (min-width: $width-tablet) {
+        left: auto;
+        right: 30px;
+        top: 135px;
+        width: 268px;
+        height: 112px;
+      }
+
+      @media (min-width: $width-desktop) {
+        right: auto;
+        left: 33px;
+        top: 67px;
+        width: 134px;
+        height: 56px;
+      }
+    }
+  }
 }
 
-// .tariff-card__img {
-//   position: absolute;
+// сделать чтоб работало
+// .tariff-card__wrapper{
+//   z-index: 10;
 
 //   &--slim {
-//     top: 21px;
-//     left: 27px;
+//     &::before {
+//       background-image: url(../img/icons-decor/sprite-decor.svg#cat-slim)
+//     }
 //   }
 
 //   &--pro {
-//     top: 35px;
-//     left: 13px;
-//   }
-
-//   @media (min-width: $width-tablet) {
-//     position: absolute;
-
-//     &--slim {
-//       top: 81px;
-//       right: 93px;
-//       left: auto;
-//     }
-
-//     &--pro {
-//       top: 135px;
-//       right: 29px;
-//       left: auto;
-//     }
-//   }
-
-//   @media (min-width: $width-desktop) {
-//     position: absolute;
-
-//     &--slim {
-//       top: 41px;
-//       right: auto;
-//       left: 67px;
-//     }
-
-//     &--pro {
-//       top: 67px;
-//       right: auto;
-//       left: 33px;
+//     &::before {
+//       background-image: url(../img/icons-decor/sprite-decor.svg#cat-slim)
 //     }
 //   }
 // }
@@ -146,9 +172,13 @@
   }
 
   &::after {
-    content: url("../img/icons/arrow.svg");
+    content: "";
     position: absolute;
     margin-left: 15px;
+    background-image: url("../img/icons-decor/sprite-decor.svg#arrow");
+    margin-top: 3px;
+    width: 32px;
+    height: 12px;
 
     @media (min-width: $width-tablet) {
       margin-left: 25px;

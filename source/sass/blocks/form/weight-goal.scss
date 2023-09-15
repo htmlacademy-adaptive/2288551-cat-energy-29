@@ -16,12 +16,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 28px 25px 8px;
+    padding: 25px 28px;
   }
 }
 
 .weight-goal__item-wrapper {
   padding: 0 20px;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -33,7 +38,6 @@
 .radio {
   display: flex;
   gap: 15px;
-  margin-bottom: 13px;
   position: relative;
   align-items: center;
   cursor: pointer;

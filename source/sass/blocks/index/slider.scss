@@ -1,51 +1,102 @@
 .slider {
-  display: flex;
-  position: relative;
-  height: 256px;
-  justify-content: center;
+  width: 100%;
+  height: 300px;
 
   @media (min-width: $width-tablet) {
-    background-image: linear-gradient(transparent 0 151px, #eaeaea 151px 100%);
-    height: 462px;
+    margin-top: 100px;
+    background-image: linear-gradient(#ffffff 0 151px, #eaeaea 151px 100%);
+    height: 613px;
   }
 
   @media (min-width: $width-desktop) {
     padding-right: 110px;
+    margin-top: 0;
     height: 462px;
     background: transparent;
   }
 }
 
 .slider__wrapper {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 280px;
+  height: 256px;
 
   @media (min-width: $width-tablet) {
-    top: -151px;
+    width: 560px;
+    height: 512px;
   }
 
   @media (min-width: $width-desktop) {
-    top: -135px;
+    margin-top: -135px;
   }
 }
 
-.slider__button {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: 5;
-  cursor: ew-resize;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/mobile-img/thumb.svg");
+.slider__before-img {
+  display: block;
+  object-fit: cover;
+  width: 140px;
+  height: 256px;
+  object-position: left top;
 
   @media (min-width: $width-tablet) {
-    top: 25%;
+    width: 280px;
+    height: 512px;
+  }
+}
+
+.slider__after-img {
+  display: block;
+  object-fit: cover;
+  width: 140px;
+  height: 256px;
+  object-position: right top;
+  margin-left: auto;
+
+  @media (min-width: $width-tablet) {
+    width: 280px;
+    height: 512px;
+  }
+}
+
+.slider__before {
+  height: 100%;
+  overflow: hidden;
+  z-index: 6;
+
+  @media (min-width: $width-tablet) {
+    height: 512px;
+  }
+}
+
+.slider__resize-wrapper {
+  width: 4px;
+}
+
+.slider__resize {
+  position: absolute;
+  z-index: 10;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $main-page-color;
   }
 
-  @media (min-width: $width-desktop) {
-    top: 30%;
+  &:active {
+    opacity: 0.6;
   }
+
+  @media (min-width: $width-tablet) {
+    height: 512px;
+  }
+}
+
+.slider__resize-arrows {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
 }

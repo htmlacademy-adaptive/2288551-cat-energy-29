@@ -8,7 +8,7 @@
   <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="mainfest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -23,7 +23,7 @@
       <img src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-header__nav">
-      <input class="toggle__input" id="toggle-button" type="checkbox" />
+      <input class="toggle__input" id="toggle-button" type="checkbox" checked/>
       <label class="toggle__label" for="toggle-button">
         <span class="toggle__line"></span>
       </label>
@@ -49,6 +49,14 @@
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+          srcset="img/desktop-img/index-can@1x.webp 1x, img/desktop-img/index-can@2x.webp 2x" width="552" height="499">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/tablet-img/index-can-tablet@1x.webp 1x, img/tablet-img/index-can-tablet@2x.webp 2x" width="709"
+          height="609">
+        <source type="image/webp"
+          srcset="img/mobile-img/index-can-mobile@1x.webp 1x, img/mobile-img/index-can-mobile@2x.webp 2x" width="280"
+          height="270">
         <source media="(min-width: 1440px)"
           srcset="img/desktop-img/index-can@1x.png 1x, img/desktop-img/index-can@2x.png 2x" width="552" height="499">
         <source media="(min-width: 768px)"
@@ -61,8 +69,8 @@
     </section>
     <section class="tariff">
       <ul class="tariff-list">
-        <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+        <li class="tariff-list__item tariff-card tariff-card--slim">
+          <div class="tariff-card__wrapper">
             <h2 class="tariff-card__title">похудение</h2>
             <p class="tariff-card__description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -72,8 +80,8 @@
             </a>
           </div>
         </li>
-        <li class="tariff-list__item tariff-card">
-          <div class="tariff-card__title-wrapper">
+        <li class="tariff-list__item tariff-card tariff-card--pro">
+          <div class="tariff-card__wrapper">
             <h2 class="tariff-card__title">набор массы</h2>
             <p class="tariff-card__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -127,32 +135,47 @@
           </dl>
         </div>
         <dl class="example__price price">
-          <dt class="price__info">Затраты на питание:</dt>
+          <dt class="price__info">Затраты на питание:&nbsp;</dt>
           <dd class="price__value">15 000 РУБ.</dd>
         </dl>
       </div>
       <div class="example__slider-container slider">
         <div class="slider__wrapper">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
+          <div class="slider__before">
+            <picture>
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
+            img/tablet-img/viewport-tablet-before@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
+            img/mobile-img/viewport-mobile-before@2x.webp 2x" width="280" height="256">
+              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
             img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
-            <img src="img/mobile-img/viewport-mobile-before@1x.png"
-              srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
-          </picture>
-        </div>
-        <div class="slider__button"></div>
-        <div class="slider__wrapper slider__wrapper--overlay">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
+              <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
+                srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
+            </picture>
+          </div>
+          <div class="slider__resize-wrapper">
+            <div class="slider__resize"></div>
+            <svg class="slider__resize-arrows" width="40" height="40" aria-hidden="true">
+              <use xlink:href="img/icons/slider-arrows.svg"></use>
+            </svg>
+          </div>
+          <div class="slider__after">
+            <picture>
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
+            img/tablet-img/viewport-tablet-after@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
+            img/mobile-img/viewport-mobile-after@2x.webp 2x" width="280" height="256">
+              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
             img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
-            <img src="img/mobile-img/viewport-mobile-after@1x.png"
-              srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
-          </picture>
+              <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"
+                srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
     <section class="contact">
-      <div class="contact__wrapper contact__wrapper--dark-color">
+      <div class="contact__wrapper">
         <h2 class="contact__title">
           приглашаем<br>
           к сотрудничеству<br>
@@ -165,6 +188,12 @@
       </div>
       <div class="contact__map-wrapper contact__map-wrapper--nojs">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/desktop-img/map@1x.webp 1x, img/desktop-img/map@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/tablet-img/map@1x.webp 1x, img/tablet-img/map@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="img/mobile-img/map@1x.webp 1x, img/mobile-img/map@2x.webp 2x" width="320"
+            height="362">
           <source media="(min-width: 1440px)" srcset="img/desktop-img/map@1x.png 1x, img/desktop-img/map@2x.png 2x"
             width="1440" height="400">
           <source media="(min-width: 768px)" srcset="img/tablet-img/map@1x.png 1x, img/tablet-img/map@2x.png 2x"
@@ -174,6 +203,10 @@
         </picture>
         <a class="contact__map-pin" href="https://goo.gl/maps/DVYxUVKCaPf7gK7B9">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.webp 1x,
+          img/desktop-img/map-pin@2x.webp 2x" width="113" height="106">
+            <source type="image/webp" srcset="img/mobile-img/map-pin@1x.webp 1x, img/mobile-img/map-pin@2x.webp 2x"
+              width="57" height="53">
             <source media="(min-width: 768px)" srcset="img/desktop-img/map-pin@1x.png 1x,
           img/desktop-img/map-pin@2x.png 2x" width="113" height="106">
             <img src="img/mobile-img/map-pin@1x.png" srcset="img/mobile-img/map-pin@2x.png 2x" width="57" height="53"
@@ -188,28 +221,28 @@
 
   <footer class="main-footer">
     <a class="main-footer__logo-link" href="#" aria-label="ссылка на главную страницу">
-      <img class="main-footer__logo-svg" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+      <img class="main-footer__logo-svg" src="img/icons/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
     </a>
     <div class="main-footer__social-wrapper">
       <ul class="main-footer__list social-list">
         <li class="social-list__item">
           <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#vkontakte"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#youtube"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
             <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite-social.svg#telegram"></use>
+              <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
             </svg>
           </a>
         </li>
@@ -219,13 +252,13 @@
       <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
       <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
         <svg width="27" height="34" aria-hidden="true" focusable="false">
-          <use xlink:href="img/icons/sprite-social.svg#htmlacademy-logo"></use>
+          <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
         </svg>
       </a>
     </div>
   </footer>
   <script defer src="js/map.js"></script>
-  <script defer src="js/slider.js"></script>
+  <script defer src="js/main-header__nav.js"></script>
 </body>
 
 </html>

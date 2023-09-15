@@ -28,6 +28,12 @@
 
 .advantages__description {
   @include index-main-text;
+  margin: 3px 0 3px 80px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    margin-top: 150px;
+  }
 }
 
 .advantages__list {
@@ -41,12 +47,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    row-gap: 37px 153px;
+    width: 708px;
+    gap: 37px 153px;
+    margin: 0 auto;
   }
 
   @media (min-width: $width-desktop) {
     gap: 77px;
+    flex-wrap: nowrap;
+    min-width: 1220px;
   }
 }
 
@@ -55,9 +64,54 @@
   align-items: center;
   min-width: 280px;
   min-height: 60px;
-  // &--icon_first {
-  // 		background-image:  url("../../../img/icons/sprite.svg#leaf");
-  // 	}
+
+  &--icon_first {
+    background-image: url("../img/icons-decor/sprite-decor.svg#leaf");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-position: 20px 60px;
+      background-size: 40px 40px;
+    }
+  }
+
+  &--icon_second {
+    background-image: url("../img/icons-decor/sprite-decor.svg#powder");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 40px 40px;
+      background-position: 20px 60px;
+    }
+  }
+
+  &--icon_third {
+    background-image: url("../img/icons-decor/sprite-decor.svg#cutlery");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 40px 40px;
+      background-position: 20px 60px;
+    }
+  }
+
+  &--icon_fourth {
+    background-image: url("../img/icons-decor/sprite-decor.svg#clock");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 40px 40px;
+      background-position: 20px 60px;
+    }
+  }
 
   @media (min-width: $width-tablet) {
     flex-wrap: wrap;
@@ -68,14 +122,15 @@
 
   &::before {
     content: "";
+    position: absolute;
     display: block;
     background-color: $main-page-color;
     min-width: 60px;
     height: 60px;
-    margin-right: 20px;
     z-index: -5;
 
     @media (min-width: $width-tablet) {
+      top: 40px;
       width: 80px;
       height: 80px;
     }
