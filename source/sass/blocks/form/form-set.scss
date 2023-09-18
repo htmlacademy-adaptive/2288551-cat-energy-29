@@ -27,7 +27,6 @@
 
   @media (min-width: $width-tablet) {
     display: inline;
-    margin: 0;
     font-size: 16px;
   }
 }
@@ -38,7 +37,11 @@
 
   @media (min-width: $width-tablet) {
     display: inline-block;
-    margin: 0 68px 60px 70px;
+    margin: 0 60px 60px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
     width: 284px;
   }
 
@@ -49,7 +52,7 @@
 }
 
 .form-set__about-cat {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 72px;

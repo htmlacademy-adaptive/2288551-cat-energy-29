@@ -1,15 +1,15 @@
 .slider {
   width: 100%;
-  height: 300px;
+  height: 295px;
 
   @media (min-width: $width-tablet) {
-    margin-top: 100px;
+    margin-top: 115px;
     background-image: linear-gradient(#ffffff 0 151px, #eaeaea 151px 100%);
     height: 613px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-right: 110px;
+    padding-right: 85px;
     margin-top: 0;
     height: 462px;
     background: transparent;
@@ -63,40 +63,57 @@
 .slider__before {
   height: 100%;
   overflow: hidden;
-  z-index: 6;
+  z-index: 2;
 
   @media (min-width: $width-tablet) {
     height: 512px;
   }
 }
 
-.slider__resize-wrapper {
-  width: 4px;
-}
+// slider-button
 
-.slider__resize {
+.slider__button-wrapper {
+  cursor: ew-resize;
   position: absolute;
-  z-index: 10;
-  width: 4px;
-  height: 256px;
-  background-color: #666666;
-  border-radius: 2px;
-
-  &:hover {
-    background-color: $main-page-color;
-  }
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 
   &:active {
     opacity: 0.6;
   }
+}
 
-  @media (min-width: $width-tablet) {
-    height: 512px;
+.slider__button-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  width: 4px;
+  background-color: #666666;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: #68b738;
   }
 }
 
-.slider__resize-arrows {
-  z-index: 10;
-  width: 40px;
-  height: 40px;
+.slider__button-icon {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+  }
+}
+
+.slider__button-line:hover ~ .slider__button-icon {
+  color: #68b738;
 }

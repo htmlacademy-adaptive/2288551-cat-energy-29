@@ -1,2 +1,3 @@
-// let contactMapWrapper = document.querySelector('.contact__map-wrapper');
-// contactMapWrapper.classList.remove('contact__map-wrapper--nojs');
+document.querySelector('.contact__map-img').style.display = 'none';
+document.querySelector('.contact__map-pin').style.display = 'none';
+document.querySelector('.contact__map-iframe').style.display = 'block';

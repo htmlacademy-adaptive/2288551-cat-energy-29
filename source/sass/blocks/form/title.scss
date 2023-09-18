@@ -11,7 +11,7 @@
     @media (min-width: $width-tablet) {
       content: "";
       border-bottom: 2px solid $main-page-color;
-      height: 18px;
+      height: 23px;
       width: 30px;
       margin-left: -70px;
     }
@@ -31,6 +31,7 @@
 
     @media (min-width: $width-tablet) {
       right: 0;
+      height: 23px;
       margin-right: -70px;
     }
 

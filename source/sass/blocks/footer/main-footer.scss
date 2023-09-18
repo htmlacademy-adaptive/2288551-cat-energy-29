@@ -5,13 +5,18 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
-    padding: 61px 30px;
+    padding: 55px 30px;
     align-items: center;
   }
 
   @media (min-width: $width-desktop) {
     padding: 66px 110px;
   }
+}
+
+.main-footer__logo-svg {
+  width: 130px;
+  height: 25px;
 }
 
 .main-footer__logo-link {
@@ -67,20 +72,24 @@
     content: "";
     display: block;
     border-bottom: $border;
-    margin: 20px 0;
+    margin: 18px 0;
   }
 
   .main-footer__social-wrapper::after {
     content: "";
     display: block;
     border-bottom: $border;
-    margin: 20px 0;
+    margin: 17px 0;
   }
 }
 
 .main-footer__social-wrapper {
   @media (min-width: $width-tablet) {
     position: absolute;
-    left: 45%;
+    left: 41.5%;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 45.5%;
   }
 }

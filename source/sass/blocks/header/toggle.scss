@@ -8,6 +8,7 @@
 
   .toggle__input:checked ~ .toggle__label > .toggle__line {
     transform: rotate(-45deg);
+    right: -3px;
   }
 
   .toggle__input:checked ~ .toggle__label > .toggle__line::before {
@@ -26,7 +27,7 @@
 
   .toggle__label {
     display: flex;
-    padding-top: 7px;
+    padding-top: 4px;
     align-items: center;
     position: absolute;
     top: 20px;

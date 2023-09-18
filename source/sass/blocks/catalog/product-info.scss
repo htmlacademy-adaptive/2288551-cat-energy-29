@@ -18,7 +18,8 @@
 
   @media (min-width: $width-tablet) {
     border-bottom: $border;
-    padding: 9px 0 6px;
+    height: 30px;
+    align-items: center;
   }
 }
 
@@ -27,6 +28,6 @@
 
   @media (min-width: $width-tablet) {
     border-bottom: $border;
-    padding: 9px 0 6px;
+    height: 30px;
   }
 }

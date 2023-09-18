@@ -1,12 +1,12 @@
 .comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 65px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 }
 
@@ -26,7 +26,7 @@
   @include form-main-text;
   resize: none;
   width: 100%;
-  padding: 14px;
+  padding: 13px 14px;
   appearance: none;
   margin: 0;
   border: none;
