@@ -1,3 +1,9 @@
+.main-form-container {
+  @media (min-width: $width-desktop) {
+    margin-top: 70px;
+  }
+}
+
 .form-container__intro {
   padding: 0 20px;
 
@@ -42,10 +48,12 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
+  width: 265px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
+    width: 365px;
   }
 }

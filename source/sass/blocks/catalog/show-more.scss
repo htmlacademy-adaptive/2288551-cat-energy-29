@@ -1,10 +1,9 @@
 .show-more {
   display: block;
   list-style: none;
-  padding: 20px;
-  min-width: 280px;
+  margin: 3px auto 50px;
+  width: 280px;
   text-align: center;
-  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
     width: 324px;
@@ -12,10 +11,13 @@
     border: 2px solid $dark-page-color;
     margin: 0;
     margin-top: 81px;
+    padding: 0px 20px 20px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 245px;
+    width: 250px;
+    height: 429px;
+    padding: 3px 20px 20px;
   }
 }
 
@@ -33,7 +35,7 @@
     font-size: 20px;
     line-height: 22px;
     width: 150px;
-    margin: 0 auto 23px;
+    margin: 0 auto 28px;
   }
 }
 
@@ -43,17 +45,18 @@
   font-family: $main-font;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
   margin-bottom: 21px;
 
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 18px;
     width: 165px;
-    margin: 0 auto 62px;
+    margin: 0 auto 80px;
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 auto 72px;
+    margin: 0 auto 90px;
   }
 }
 
@@ -90,14 +93,14 @@
 .show-more__svg {
   width: 30px;
   height: 30px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   margin-top: 25px;
 
   @media (min-width: $width-tablet) {
     width: 60px;
     height: 60px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 45px;
   }
 
   @media (min-width: $width-desktop) {

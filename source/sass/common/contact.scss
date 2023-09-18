@@ -10,12 +10,13 @@
   background-color: $light-page-color;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 26px 19px;
   z-index: 3;
+  gap: 17px;
+  padding: 13px 20px 12px;
 
   @media (min-width: $width-tablet) {
-    padding: 60px 70px;
+    padding: 45px 70px;
+    justify-content: space-between;
   }
 
   &--dark-color {
@@ -27,8 +28,9 @@
     position: absolute;
     width: 565px;
     min-height: 200px;
-    top: 95px;
+    top: 92px;
     left: 110px;
+    padding: 45px 80px;
   }
 }
 
@@ -44,6 +46,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+  }
 }
 
 .contact__address {
@@ -52,7 +58,6 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  white-space: nowrap;
 
   @media (min-width: $width-tablet) {
     font-size: 16px;
@@ -105,7 +110,7 @@
 
   @media (min-width: $width-tablet) {
     top: 148px;
-    left: 44%;
+    left: 43%;
   }
 
   @media (min-width: $width-desktop) {

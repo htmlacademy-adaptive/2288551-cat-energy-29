@@ -1,17 +1,19 @@
 .addition {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 52px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $width-desktop) {
     margin-bottom: 60px;
+    display: flex;
+    gap: 25px;
   }
 }
 
 .addition__legend {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   width: 100%;
 
   @media (min-width: $width-tablet) {
@@ -31,11 +33,22 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 32px;
     display: inline-block;
-    width: 300px;
+    width: 280px;
   }
 
   @media (min-width: $width-desktop) {
     margin-bottom: 0;
+    width: 300px;
+  }
+}
+
+.addition__item:nth-of-type(2n + 1) {
+  @media (min-width: $width-tablet) {
+    margin-right: 65px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 0;
   }
 }
 
@@ -62,10 +75,15 @@
   appearance: none;
   display: inline-block;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: $border;
   outline: none;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__label:hover .checkbox__title {
@@ -80,8 +98,12 @@
   content: "";
   position: absolute;
   background: url("../img/icons/checkmark.svg") no-repeat;
-  margin: 11px 8px 10px;
+  margin: 7px 5px 10px;
   width: 26px;
   height: 26px;
   flex-shrink: 0;
+
+  @media (min-width: $width-tablet) {
+    margin: 11px 8px 10px;
+  }
 }
