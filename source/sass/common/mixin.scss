@@ -1,0 +1,90 @@
+// rule for resetting list styles
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin reset-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+@mixin index-main-text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin first-title {
+  margin: 0;
+  color: $light-page-color;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 100%;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    color: $title-color;
+  }
+}
+
+@mixin tariff-title {
+  margin: 0;
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@mixin index-second-title {
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin form-title {
+  margin: 0;
+  color: $title-color;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@mixin form-main-text {
+  color: $text-color;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    color: $text-color;
+  }
+}

@@ -1,0 +1,150 @@
+.main-index-container {
+  @media (min-width: $width-desktop) {
+    margin-top: 62px;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-desktop) {
+    top: -180px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 720px, transparent 720px),
+      url("../img/desktop-img/index-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 720px 694px;
+    min-height: 694px;
+    z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 720px, transparent 720px), url("../img/desktop-img/index-background-desktop@2x.png");
+    }
+  }
+}
+
+.main-index-container .intro {
+  position: relative;
+}
+
+.intro__wrapper {
+  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%, transparent 100%),
+    url("../img/mobile-img/index-background@1x.png"),
+    linear-gradient(to left, #62a53a 0 50%, #64a73b 50% 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px 302px, contain, 100%;
+  min-height: 302px;
+  position: relative;
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%, transparent 100%),
+      url("../img/mobile-img/index-background@2x.png"),
+      linear-gradient(to left, #62a53a 0 50%, #64a73b 50% 100%);
+  }
+
+  @media (min-width: $width-tablet) {
+    text-align: left;
+    background-image: none;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 225px;
+  }
+}
+
+.intro__title {
+  @include first-title;
+  margin: 0 auto;
+  padding: 27px 20px 25px;
+  font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 120px 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 190px 40px;
+  }
+}
+
+.intro__slogan {
+  margin: 0 auto;
+  padding: 0 20px 25px;
+  color: $light-page-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 100%;
+
+  @media (min-width: $width-tablet) {
+    color: $title-color;
+    padding: 0 120px 50px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
+    padding: 0 190px 0;
+    margin: 0;
+  }
+}
+
+.intro__img {
+  margin: -135px auto 0;
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    margin: -100px 30px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: -380px 330px 0 auto;
+  }
+}
+
+.intro__link {
+  display: block;
+  margin: 3px auto 20px;
+  padding: 10px 0;
+  width: 280px;
+  color: $light-page-color;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: $main-page-color;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    left: 120px;
+    font-size: 20px;
+    margin-top: 230px;
+    line-height: 26px;
+    width: 244px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 190px;
+    position: absolute;
+    left: 0;
+    bottom: 185px;
+  }
+}

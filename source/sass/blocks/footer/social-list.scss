@@ -1,0 +1,18 @@
+.social-list {
+  @include reset-list;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.social-list__link {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

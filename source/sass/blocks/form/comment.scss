@@ -1,0 +1,61 @@
+.comment {
+  margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 67px;
+  }
+}
+
+.comment__wrapper {
+  margin-bottom: 38px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 78px;
+  }
+}
+
+.comment__field {
+  @include form-main-text;
+  resize: none;
+  width: 100%;
+  padding: 13px 14px;
+  appearance: none;
+  margin: 0;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  transition: 0.2s;
+
+  &:hover {
+    outline: $border;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $text-color;
+  }
+
+  &::-moz-placeholder {
+    color: $text-color;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 11px 20px;
+    height: 175px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 9px 20px;
+  }
+}

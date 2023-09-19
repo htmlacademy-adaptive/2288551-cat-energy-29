@@ -1,0 +1,74 @@
+.form-set {
+  @media (min-width: $width-desktop) {
+    position: relative;
+  }
+}
+
+.form-set__about-cat,
+.form-set__about-owner,
+.form-set__review,
+.form-set__extra {
+  @include reset-fieldset;
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+.form-set__notification {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  color: $title-color;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $width-tablet) {
+    display: inline;
+    font-size: 16px;
+    position: relative;
+    top: -6px;
+  }
+}
+
+.form-set__button {
+  display: block;
+  margin: 0 auto 21px;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    margin: 0 60px 60px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 284px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 80px 79px 0;
+    width: 570px;
+  }
+}
+
+.form-set__about-cat {
+  margin-bottom: 10px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+    margin: 0 80px 70px 0;
+  }
+}
+
+.form-set__cat-weight {
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+    width: 565px;
+  }
+}

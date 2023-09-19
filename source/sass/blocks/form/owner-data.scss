@@ -1,0 +1,185 @@
+.owner-data {
+  margin-bottom: 16px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.owner-data__wrapper {
+  margin-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 70px;
+  }
+}
+
+.owner-data__wrapper-item {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    gap: 82px;
+  }
+}
+
+.email__caption,
+.telephone__caption,
+.email__field,
+.telephone__field {
+  @include form-main-text;
+}
+
+.email__caption,
+.telephone__caption {
+  white-space: pre-wrap;
+  max-width: 80px;
+  width: max-content;
+}
+
+.email__caption {
+  min-width: 50px;
+
+  @media (min-width: $width-tablet) {
+    width: 70px;
+  }
+}
+
+.owner-data__item {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 10px;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+}
+
+.email__field,
+.telephone__field {
+  flex-grow: 1;
+  appearance: none;
+  margin: 0;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #e7e7e7;
+  padding: 12px 25px 10px 16px;
+  width: 100%;
+  transition: 0.2s;
+
+  @media (min-width: $width-tablet) {
+    padding: 10px 25px 10px 21px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline-color: #ff8282;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $text-color;
+  }
+
+  &::-moz-placeholder {
+    color: $text-color;
+  }
+
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.email__field {
+  @media (min-width: $width-desktop) {
+    width: 495px;
+    margin-top: 7px;
+  }
+}
+
+.telephone__field {
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &--number {
+    -moz-appearance: textfield; /* stylelint-disable-line */
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 470px;
+  }
+}
+
+.email,
+.telephone {
+  position: relative;
+  gap: 13px;
+}
+
+.email__icon {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 20px;
+  top: 15px;
+  right: 8px;
+  -webkit-mask-image: url("../img/icons-decor/sprite-decor.svg#email"); //stylelint-disable-line property-no-vendor-prefix
+  mask-image: url("../img/icons-decor/sprite-decor.svg#email");
+  background-color: #222222;
+
+  @media (min-width: $width-tablet) {
+    top: 23px;
+    right: 10px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 22px;
+    right: 10px;
+  }
+}
+
+.telephone__icon {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 17px;
+  right: 12px;
+  -webkit-mask-image: url("../img/icons-decor/sprite-decor.svg#phone");//stylelint-disable-line property-no-vendor-prefix
+  mask-image: url("../img/icons-decor/sprite-decor.svg#phone");
+  background-color: #222222;
+
+  @media (min-width: $width-tablet) {
+    top: 22px;
+    right: 12px;
+  }
+}
+
+.email__field:focus:invalid + .email__icon,
+.telephone__field:focus:invalid + .telephone__icon {
+  background-color: #ff8282;
+}
+
+.email__field:focus + .email__icon,
+.telephone__field:focus + .telephone__icon {
+  background-color: $main-page-color;
+}

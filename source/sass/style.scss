@@ -1,0 +1,45 @@
+// Начните писать стили здесь
+
+// global styles
+@import "common/fonts.scss";
+@import "common/visually-hidden.scss";
+@import "common/variables.scss";
+@import "common/mixin.scss";
+@import "common/contact.scss";
+@import "common/order-button.scss";
+@import "common/global.scss";
+
+
+// header
+@import "blocks/header/main-header.scss";
+@import "blocks/header/main-nav.scss";
+@import "blocks/header/toggle.scss";
+
+// footer
+@import "blocks/footer/main-footer.scss";
+@import "blocks/footer/social-list.scss";
+
+// index.html
+@import "blocks/index/advantages.scss";
+@import "blocks/index/example.scss";
+@import "blocks/index/intro.scss";
+@import "blocks/index/tariff-list.scss";
+@import "blocks/index/tariff-card.scss";
+@import "blocks/index/slider.scss";
+
+// catalog.html
+@import "blocks/catalog/product-info.scss";
+@import "blocks/catalog/products.scss";
+@import "blocks/catalog/show-more.scss";
+@import "blocks/catalog/addition-products.scss";
+@import "blocks/catalog/promo.scss";
+
+//form.html
+@import "blocks/form/form-set.scss";
+@import "blocks/form/form-container.scss";
+@import "blocks/form/title.scss";
+@import "blocks/form/addition.scss";
+@import "blocks/form/form-field.scss";
+@import "blocks/form/owner-data.scss";
+@import "blocks/form/comment.scss";
+@import "blocks/form/weight-goal.scss";

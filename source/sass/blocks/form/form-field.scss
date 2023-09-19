@@ -1,0 +1,82 @@
+.form-field__caption,
+.form-field__field {
+  @include form-main-text;
+}
+
+.form-field {
+  display: flex;
+  min-width: 280px;
+  margin-bottom: 12px;
+
+  @media (min-width: $width-tablet) {
+    min-width: 628px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+    min-width: auto;
+  }
+}
+
+.form-field__caption {
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.form-field__field {
+  padding: 14px 15px 13px;
+  border: 1px solid #e7e7e7;
+  transition: 0.2s;
+  width: 100%;
+  outline: none;
+
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline-color: #ff8282;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $text-color;
+  }
+
+  &::-moz-placeholder {
+    color: $text-color;
+  }
+
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+
+  &--number::-webkit-outer-spin-button,
+  &--number::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &--number {
+    -moz-appearance: textfield; // stylelint-disable-line
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 10px 20px;
+    flex-grow: 1;
+    width: auto;
+  }
+}

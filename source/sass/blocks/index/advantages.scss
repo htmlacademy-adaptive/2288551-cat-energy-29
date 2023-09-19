@@ -1,0 +1,179 @@
+.advantages {
+  padding: 0 20px;
+  margin-bottom: 50px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 30px 47px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px;
+    margin-bottom: 205px;
+    border: none;
+  }
+}
+
+.advantages__title {
+  @include index-second-title;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 33px;
+  }
+}
+
+.advantages__description {
+  @include index-main-text;
+  margin: 0 0 3px 80px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    margin-top: 95px;
+    width: 245px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 33px;
+  }
+}
+
+.advantages__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: num;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 708px;
+    gap: 37px 115px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 55px;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  min-height: 60px;
+
+  @media (min-width: $width-tablet) {
+    flex-wrap: wrap;
+    min-height: 280px;
+    width: 270px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 280px;
+  }
+
+  &--icon_first {
+    background-image: url("../img/icons-decor/sprite-decor.svg#leaf");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 30px 30px;
+      background-position: 25px 65px;
+      width: 250px;
+      margin-right: 20px;
+    }
+  }
+
+  &--icon_second {
+    background-image: url("../img/icons-decor/sprite-decor.svg#powder");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 30px 30px;
+      background-position: 25px 65px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 270px;
+    }
+  }
+
+  &--icon_third {
+    background-image: url("../img/icons-decor/sprite-decor.svg#cutlery");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 30px 30px;
+      background-position: 25px 65px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-right: -10px;
+    }
+  }
+
+  &--icon_fourth {
+    background-image: url("../img/icons-decor/sprite-decor.svg#clock");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 15px;
+
+    @media (min-width: $width-tablet) {
+      background-size: 30px 30px;
+      background-position: 25px 65px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $main-page-color;
+    min-width: 60px;
+    height: 60px;
+    z-index: -5;
+
+    @media (min-width: $width-tablet) {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .advantages__list .advantages__item {
+    position: relative;
+  }
+
+  .advantages__list .advantages__item::after {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    color: $dark-page-color;
+    right: 25px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -6;
+  }
+}
