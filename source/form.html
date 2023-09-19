@@ -24,7 +24,7 @@
       <img class="main-header__logo-text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-header__nav">
-      <input class="toggle__input" id="toggle-button" type="checkbox" aria-label="кнопка открытия меню" checked/>
+      <input class="toggle__input" id="toggle-button" type="checkbox" aria-label="кнопка открытия меню" checked>
       <label class="toggle__label" for="toggle-button">
         <span class="toggle__line"></span>
       </label>
@@ -97,30 +97,26 @@
               <span class="email__caption">E-mail:<sup>*</sup></span>
               <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com"
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-              <div class="email__icon"></div>
+              <span class="email__icon"></span>
             </label>
             <label class="owner-data__item telephone">
               <span class="telephone__caption">Телефон:<sup>*</sup></span>
-              <input class="telephone__field telephone__field--number" type="number" name="telephone" placeholder="8 (960) 900-60-90"
+              <input class="telephone__field telephone__field--number" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
               pattern="\+?[0-9\s\-\(\)]+" required>
-              <div class="telephone__icon"></div>
+              <span class="telephone__icon"></span>
             </label>
           </div>
         </fieldset>
         <fieldset class="form-set__review comment">
-          <label>
-            <p class="comment__wrapper title">
-              <span class="title__text">Комментарий</span>
-            </p>
+          <label class="comment__legend">
+            <span class="title__text">Комментарий</span>
             <textarea class="comment__field" name="comment" rows="7" cols="30"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form-set__extra addition">
           <legend class="addition__legend">
-            <div class="title">
-              <span class="title__text">Дополнительно</span>
-            </div>
+            <span class="title__text">Дополнительно</span>
           </legend>
           <div class="addition__item checkbox">
             <label class="checkbox__label">
