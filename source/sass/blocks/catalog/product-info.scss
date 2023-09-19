@@ -1,23 +1,17 @@
 .catalog-card {
   @include reset-list;
   border-bottom: $border;
-
-  @media (min-width: $width-tablet) {
-    border-bottom: none;
-  }
-}
-
-.catalog-card {
   padding: 20px 20px 25px;
   min-width: 280px;
   display: grid;
   grid-template-areas: "image info"
-                        "button button";
+    "button button";
 
   @media (min-width: $width-tablet) {
+    border-bottom: none;
     grid-template-areas: "image"
-                          "info"
-                          "button";
+      "info"
+      "button";
     min-width: 250px;
     height: 511px;
     padding: 0 37px 40px;
@@ -129,6 +123,7 @@
   font-family: $main-font;
   font-size: 12px;
   line-height: 16px;
+
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 16px;
