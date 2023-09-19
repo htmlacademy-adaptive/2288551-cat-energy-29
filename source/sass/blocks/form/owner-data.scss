@@ -110,6 +110,10 @@
     margin: 0;
   }
 
+  &--number {
+    -moz-appearance: textfield; // stylelint-disable-line
+  }
+
   @media (min-width: $width-desktop) {
     width: 470px;
   }
