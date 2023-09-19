@@ -11,7 +11,7 @@
 }
 
 .owner-data__wrapper {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 70px;
@@ -34,7 +34,17 @@
 
 .email__caption,
 .telephone__caption {
-  white-space: nowrap;
+  white-space: pre-wrap;
+  max-width: 80px;
+  width: max-content;
+}
+
+.email__caption {
+  min-width: 50px;
+
+  @media (min-width: $width-tablet) {
+    width: 70px;
+  }
 }
 
 .owner-data__item {
@@ -108,6 +118,10 @@
   &--number::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+  }
+
+  &--number {
+    -moz-appearance: textfield; /* stylelint-disable-line */
   }
 
   @media (min-width: $width-desktop) {
