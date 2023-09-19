@@ -28,6 +28,8 @@
   @media (min-width: $width-tablet) {
     display: inline;
     font-size: 16px;
+    position: relative;
+    top: -6px;
   }
 }
 

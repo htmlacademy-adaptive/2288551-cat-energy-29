@@ -4,16 +4,24 @@
   }
 }
 
+.products {
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
+}
+
 .products__title {
-  padding: 0 20px;
+  padding: 26px 20px 41px;
   font-weight: 400;
+  border-top: $border;
 
   @include first-title;
   color: $title-color;
-  margin-bottom: 41px;
-  margin-top: 26px;
 
   @media (min-width: $width-tablet) {
+    border-top: none;
     margin-bottom: 75px;
     padding: 0 30px;
   }
@@ -38,8 +46,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    row-gap: 50px;
-    column-gap: 40px;
+    gap: 65px 70px;
     padding: 0 110px;
     justify-content: space-between;
   }
