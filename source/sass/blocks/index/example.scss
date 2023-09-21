@@ -1,16 +1,25 @@
-.example__wrapper,
+.example__wrapper-info,
 .example__title,
 .slider {
   padding: 0 20px;
   background-color: #eaeaea;
 }
 
-.example {
+.example__wrapper {
   @media (min-width: $width-desktop) {
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr;
     background-color: #f2f2f2;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.example {
+  @media (min-width: $width-desktop) {
+    background-color: #f2f2f2;
+    width: 100%;
   }
 }
 
@@ -52,7 +61,7 @@
   }
 }
 
-.example__wrapper {
+.example__wrapper-info {
   padding-bottom: 20px;
 
   @media (min-width: $width-tablet) {
@@ -64,6 +73,8 @@
     padding: 71px 0 75px 110px;
     margin-bottom: 0;
     background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: 180px;
   }
 }
 

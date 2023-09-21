@@ -10,8 +10,9 @@
 
   @media (min-width: $width-desktop) {
     padding: 0 110px;
-    margin-bottom: 205px;
     border: none;
+    width: 1440px;
+    margin: 0 auto 205px;
   }
 }
 
@@ -63,7 +64,8 @@
 
   @media (min-width: $width-desktop) {
     gap: 55px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 1300px;
     margin: 0;
   }
 }
