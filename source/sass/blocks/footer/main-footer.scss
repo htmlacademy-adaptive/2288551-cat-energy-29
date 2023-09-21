@@ -1,6 +1,5 @@
-.main-footer {
+.main-footer__wrapper {
   text-align: center;
-  background-color: $dark-page-color;
   padding: 40px 20px;
 
   @media (min-width: $width-tablet) {
@@ -11,7 +10,13 @@
 
   @media (min-width: $width-desktop) {
     padding: 66px 110px;
+    width: 1440px;
+    margin: 0 auto;
   }
+}
+
+.main-footer {
+  background-color: $dark-page-color;
 }
 
 .main-footer__logo-svg {

@@ -1,5 +1,3 @@
-.comment__legend,
-.addition__legend,
 .title {
   display: flex;
   flex-direction: column;
@@ -44,9 +42,13 @@
     margin-left: -40px;
     padding: 0 40px;
   }
+
+  @media (min-width: 1750px) {
+    margin-left: 5%;
+  }
 }
 
-.title .title__text {
+.owner-data__wrapper .title__text {
   width: 230px;
 
   @media (min-width: $width-tablet) {

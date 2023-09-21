@@ -36,6 +36,8 @@
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 975px 1fr;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -64,6 +66,10 @@
     margin-bottom: 80px;
     padding: 0 0 0 40px;
     margin-left: -40px;
+  }
+
+  @media (min-width: 1750px) {
+    margin-left: 10%;
   }
 }
 

@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="правильное питание для котов">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin>
+  <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="mainfest" href="manifest.webmanifest">
-  <link href="./css/style.min.css" rel="stylesheet">
-  <title>Кэт энерджи: подбор программы</title>
+  <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page-container">
@@ -23,15 +25,14 @@
       </picture>
       <img class="main-header__logo-text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
-    <nav class="main-header__nav">
+    <nav class="main-header__nav toggle">
       <input class="toggle__input" id="toggle-button" type="checkbox" aria-label="кнопка открытия меню" checked>
       <label class="toggle__label" for="toggle-button">
         <span class="toggle__line"></span>
       </label>
       <ul class="main-nav">
         <li class="main-nav__item">
-          <a class="main-nav__link"
-            href="index.html">главная</a>
+          <a class="main-nav__link" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">каталог продукции</a>
@@ -42,7 +43,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-form-container">
+  <main class="form-container">
     <div class="form-container__intro">
       <h1 class="form-container__title">Подбор программы</h1>
       <p class="form-container__guide">Заполните анкету, и мы подберем
@@ -50,44 +51,46 @@
     </div>
     <section class="form">
       <form class="form-set" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-set__about-cat cat-data">
-          <label class="cat-data__item form-field">
-            <span class="form-field__caption">ИМЯ:<sup>*</sup></span>
-            <input class="form-field__field" type="text" name="cat-name" placeholder="Барсик" required>
-          </label>
-          <label class="cat-data__item form-field">
-            <span class="form-field__caption">Вес (кг):<sup>*</sup></span>
-            <input class="form-field__field form-field__field--number" type="number" name="cat-weight" placeholder="7"
-              required>
-          </label>
-          <label class="cat-data__item form-field">
-            <span class="form-field__caption">Возраст (лет):</span>
-            <input class="form-field__field form-field__field--number" type="number" name="cat-age" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="form-set__cat-weight weight-goal">
-          <div class="weight-goal__item-wrapper">
-            <label class="weight-goal__label radio">
-              <input class="radio__input" type="radio" name="cat-goal" id="weight-loss" value="weight-loss" checked>
-              <span class="radio__button"></span>
-              <span class="radio__title">похудение</span>
+        <div class="form-set__wrapper-cat-weight">
+          <fieldset class="form-set__about-cat cat-data">
+            <label class="cat-data__item form-field">
+              <span class="form-field__caption">ИМЯ:<sup>*</sup></span>
+              <input class="form-field__field" type="text" name="cat-name" placeholder="Барсик" required>
             </label>
-          </div>
-          <div class="weight-goal__item-wrapper">
-            <label class="weight-goal__label radio">
-              <input class="radio__input" type="radio" name="cat-goal" id="weight-gain" value="weight-gain">
-              <span class="radio__button"></span>
-              <span class="radio__title">Набор массы</span>
+            <label class="cat-data__item form-field">
+              <span class="form-field__caption">Вес (кг):<sup>*</sup></span>
+              <input class="form-field__field form-field__field--number" type="number" name="cat-weight" placeholder="7"
+                required>
             </label>
-          </div>
-          <div class="weight-goal__item-wrapper">
-            <label class="weight-goal__label radio">
-              <input class="radio__input" type="radio" name="cat-goal" id="weight-none" value="ask-advice">
-              <span class="radio__button"></span>
-              <span class="radio__title">Не знаю (Нужен ваш совет)</span>
+            <label class="cat-data__item form-field">
+              <span class="form-field__caption">Возраст (лет):</span>
+              <input class="form-field__field form-field__field--number" type="number" name="cat-age" placeholder="7">
             </label>
-          </div>
-        </fieldset>
+          </fieldset>
+          <fieldset class="form-set__cat-weight weight-goal">
+            <div class="weight-goal__item-wrapper">
+              <label class="weight-goal__label radio">
+                <input class="radio__input" type="radio" name="cat-goal" id="weight-loss" value="weight-loss" checked>
+                <span class="radio__button"></span>
+                <span class="radio__title">похудение</span>
+              </label>
+            </div>
+            <div class="weight-goal__item-wrapper">
+              <label class="weight-goal__label radio">
+                <input class="radio__input" type="radio" name="cat-goal" id="weight-gain" value="weight-gain">
+                <span class="radio__button"></span>
+                <span class="radio__title">Набор массы</span>
+              </label>
+            </div>
+            <div class="weight-goal__item-wrapper">
+              <label class="weight-goal__label radio">
+                <input class="radio__input" type="radio" name="cat-goal" id="weight-none" value="ask-advice">
+                <span class="radio__button"></span>
+                <span class="radio__title">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form-set__about-owner owner-data">
           <p class="owner-data__wrapper title">
             <span class="title__text">Контактные данные (владельца кота)</span>
@@ -96,59 +99,63 @@
             <label class="owner-data__item email">
               <span class="email__caption">E-mail:<sup>*</sup></span>
               <input class="email__field" type="email" name="email" placeholder="kuklachev@gmail.com"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
               <span class="email__icon"></span>
             </label>
             <label class="owner-data__item telephone">
               <span class="telephone__caption">Телефон:<sup>*</sup></span>
-              <input class="telephone__field telephone__field--number" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
-              pattern="\+?[0-9\s\-\(\)]+" required>
+              <input class="telephone__field telephone__field--number" type="tel" name="telephone"
+                placeholder="8 (960) 900-60-90" pattern="\+?[0-9\s\-\(\)]+" required>
               <span class="telephone__icon"></span>
             </label>
           </div>
         </fieldset>
         <fieldset class="form-set__review comment">
-          <label class="comment__legend">
+          <label class="comment__legend title">
             <span class="title__text">Комментарий</span>
             <textarea class="comment__field" name="comment" rows="7" cols="30"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form-set__extra addition">
-          <legend class="addition__legend">
+          <legend class="addition__legend title">
             <span class="title__text">Дополнительно</span>
           </legend>
-          <div class="addition__item checkbox">
-            <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="sweetner" id="sweetner" value="sweetner" checked>
-              <span class="checkbox__button"></span>
-              <span class="checkbox__title">сахарозаменитель</span>
-            </label>
-          </div>
-          <div class="addition__item">
-            <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="water" id="water" value="water">
-              <span class="checkbox__button"></span>
-              <span class="checkbox__title">питьевая вода</span>
-            </label>
-          </div>
-          <div class="addition__item">
-            <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="milk" id="milk" value="milk">
-              <span class="checkbox__button"></span>
-              <span class="checkbox__title">молоко</span>
-            </label>
-          </div>
-          <div class="addition__item">
-            <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
-              <span class="checkbox__button"></span>
-              <span class="checkbox__title">витамины</span>
-            </label>
+          <div class="addition__wrapper">
+            <div class="addition__item checkbox">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="sweetner" id="sweetner" value="sweetner" checked>
+                <span class="checkbox__button"></span>
+                <span class="checkbox__title">сахарозаменитель</span>
+              </label>
+            </div>
+            <div class="addition__item checkbox">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="water" id="water" value="water">
+                <span class="checkbox__button"></span>
+                <span class="checkbox__title">питьевая вода</span>
+              </label>
+            </div>
+            <div class="addition__item checkbox">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="milk" id="milk" value="milk">
+                <span class="checkbox__button"></span>
+                <span class="checkbox__title">молоко</span>
+              </label>
+            </div>
+            <div class="addition__item checkbox">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
+                <span class="checkbox__button"></span>
+                <span class="checkbox__title">витамины</span>
+              </label>
+            </div>
           </div>
         </fieldset>
-        <input class="form-set__button order-button" type="submit" value="отправить заявку">
-        <span class="form-set__notification"><sup>*</sup> &ndash; Обязательные поля</span>
+        <div class="form-set__wrapper-button">
+          <input class="form-set__button order-button" type="submit" value="отправить заявку">
+          <span class="form-set__notification"><sup>*</sup> &ndash; Обязательные поля</span>
+        </div>
       </form>
     </section>
     <section class="contact">
@@ -198,41 +205,43 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo-link" href="#" aria-label="ссылка на главную страницу">
-      <img class="main-footer__logo-svg" src="img/icons/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
-    </a>
-    <div class="main-footer__social-wrapper">
-      <ul class="main-footer__list social-list">
-        <li class="social-list__item">
-          <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__logo-html-academy">
-      <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
-      <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
-        <svg width="27" height="34" aria-hidden="true" focusable="false">
-          <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
-        </svg>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo-link" href="#" aria-label="ссылка на главную страницу">
+        <img class="main-footer__logo-svg" src="img/icons/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
+      <div class="main-footer__social-wrapper">
+        <ul class="main-footer__list social-list">
+          <li class="social-list__item">
+            <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__logo-html-academy">
+        <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
+          <svg width="27" height="34" aria-hidden="true" focusable="false">
+            <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/map.js"></script>
