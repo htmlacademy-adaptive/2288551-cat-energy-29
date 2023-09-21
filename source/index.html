@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="правильное питание для котов">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin>
+  <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="images/svg+xml" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="mainfest" href="manifest.webmanifest">
-  <link href="./css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -23,7 +25,7 @@
       </picture>
       <img class="main-header__logo-text" src="img/icons/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
-    <nav class="main-header__nav">
+    <nav class="main-header__nav toggle">
       <input class="toggle__input" id="toggle-button" type="checkbox" aria-label="кнопка открытия меню" checked>
       <label class="toggle__label" for="toggle-button">
         <span class="toggle__line"></span>
@@ -119,59 +121,62 @@
       </ol>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
       <div class="example__wrapper">
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-          обычный корм на Cat Energy Slim. Отличный результат
-          без изнуряющих тренировок! При этом он не менял своих
-          привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="data-wrapper">
-          <dl class="example__data data">
-            <dt class="data__value">5 КГ</dt>
-            <dd class="data__info">снижение веса</dd>
-          </dl>
-          <dl class="example__data data">
-            <dt class="data__value">60 ДНЕЙ</dt>
-            <dd class="data__info">затрачено времени</dd>
+        <h2 class="example__title">Живой пример</h2>
+        <div class="example__wrapper-info">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+            обычный корм на Cat Energy Slim. Отличный результат
+            без изнуряющих тренировок! При этом он не менял своих
+            привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="data-wrapper">
+            <dl class="example__data data">
+              <dt class="data__value">5 КГ</dt>
+              <dd class="data__info">снижение веса</dd>
+            </dl>
+            <dl class="example__data data">
+              <dt class="data__value">60 ДНЕЙ</dt>
+              <dd class="data__info">затрачено времени</dd>
+            </dl>
+          </div>
+          <dl class="example__price price">
+            <dt class="price__info">Затраты на питание:&nbsp;</dt>
+            <dd class="price__value">15 000 РУБ.</dd>
           </dl>
         </div>
-        <dl class="example__price price">
-          <dt class="price__info">Затраты на питание:&nbsp;</dt>
-          <dd class="price__value">15 000 РУБ.</dd>
-        </dl>
-      </div>
-      <div class="example__slider-container slider">
-        <div class="slider__wrapper">
-          <div class="slider__before">
-            <picture>
-              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
+        <div class="example__slider-container slider">
+          <div class="slider__wrapper">
+            <div class="slider__before">
+              <picture>
+                <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.webp 1x,
             img/tablet-img/viewport-tablet-before@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
+                <source type="image/webp" srcset="img/mobile-img/viewport-mobile-before@1x.webp 1x,
             img/mobile-img/viewport-mobile-before@2x.webp 2x" width="280" height="256">
-              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
+                <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-before@1x.png 1x,
             img/tablet-img/viewport-tablet-before@2x.png 2x" width="560" height="512">
-              <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
-                srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
-            </picture>
-          </div>
-          <div class="slider__button-wrapper">
-            <span class="slider__button-line" onmouseover="changeIcon()" onmouseout="rechangeIcon()"></span>
-            <svg class="slider__button-icon" onmouseover="changeLine()" onmouseout="rechangeLine()" width="40"
-              height="40" aria-hidden="true">
-              <use xlink:href="img/icons-decor/sprite-decor.svg#slider-arrows"></use>
-            </svg>
-          </div>
-          <div class="slider__after">
-            <picture>
-              <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
+                <img class="slider__before-img" src="img/mobile-img/viewport-mobile-before@1x.png"
+                  srcset="img/mobile-img/viewport-mobile-before@2x.png 2x" width="280" height="256" alt="кот до еды">
+              </picture>
+            </div>
+            <div class="slider__button-wrapper">
+              <span class="slider__button-line" onmouseover="changeIcon()" onmouseout="rechangeIcon()"></span>
+              <svg class="slider__button-icon" onmouseover="changeLine()" onmouseout="rechangeLine()" width="40"
+                height="40" aria-hidden="true">
+                <use xlink:href="img/icons-decor/sprite-decor.svg#slider-arrows"></use>
+              </svg>
+              <span class="visually-hidden">кнопка-слайдер показывает кота до и после питания</span>
+            </div>
+            <div class="slider__after">
+              <picture>
+                <source type="image/webp" media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.webp 1x,
             img/tablet-img/viewport-tablet-after@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
+                <source type="image/webp" srcset="img/mobile-img/viewport-mobile-after@1x.webp 1x,
             img/mobile-img/viewport-mobile-after@2x.webp 2x" width="280" height="256">
-              <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
+                <source media="(min-width:768px)" srcset="img/tablet-img/viewport-tablet-after@1x.png 1x,
             img/tablet-img/viewport-tablet-after@2x.png 2x" width="560" height="512">
-              <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"
-                srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
-            </picture>
+                <img class="slider__after-img" src="img/mobile-img/viewport-mobile-after@1x.png"
+                  srcset="img/mobile-img/viewport-mobile-after@2x.png 2x" width="280" height="256" alt="кот после еды">
+              </picture>
+            </div>
           </div>
         </div>
       </div>
@@ -223,41 +228,43 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo-link" href="#" aria-label="ссылка на главную страницу">
-      <img class="main-footer__logo-svg" src="img/icons/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
-    </a>
-    <div class="main-footer__social-wrapper">
-      <ul class="main-footer__list social-list">
-        <li class="social-list__item">
-          <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
-            <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__logo-html-academy">
-      <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
-      <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
-        <svg width="27" height="34" aria-hidden="true" focusable="false">
-          <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
-        </svg>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo-link" href="#" aria-label="ссылка на главную страницу">
+        <img class="main-footer__logo-svg" src="img/icons/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
+      <div class="main-footer__social-wrapper">
+        <ul class="main-footer__list social-list">
+          <li class="social-list__item">
+            <a href="https://vk.com/htmlacademy" aria-label="vkontakte html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://t.me/htmlacademy" aria-label="telegram html Academy">
+              <svg class="social-list__link" width="28" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons-social/sprite-social.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__logo-html-academy">
+        <a class="main-footer__logo-html-caption" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="main-footer__logo-html-link" href="https://htmlacademy.ru/" aria-label="сайт html Academy">
+          <svg width="27" height="34" aria-hidden="true" focusable="false">
+            <use xlink:href="img/icons-social/sprite-social.svg#htmlacademy-logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/map.js"></script>

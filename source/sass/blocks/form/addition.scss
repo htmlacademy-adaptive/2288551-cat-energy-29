@@ -21,6 +21,13 @@
   }
 }
 
+.addition__wrapper {
+  @media (min-width: $width-desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .addition__item {
   @include form-main-text;
   display: flex;
