@@ -26,7 +26,7 @@
   }
 
   .toggle__label {
-    display: none;
+    display: flex;
     padding-top: 4px;
     align-items: center;
     position: absolute;
@@ -61,7 +61,7 @@
 
   .main-nav {
     display: block;
-    position: unset;
+    position: absolute;
     visibility: hidden;
     left: 0;
     top: 65px;
@@ -84,5 +84,14 @@
 
   .main-nav__item:hover {
     background-color: #f2f2f2;
+  }
+
+  .main-nav--no-js {
+    position: unset;
+    visibility: visible;
+  }
+
+  .toggle__label--no-js {
+    display: none;
   }
 }
